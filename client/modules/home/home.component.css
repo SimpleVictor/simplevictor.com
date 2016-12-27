@@ -4,26 +4,62 @@
     height: 100%;
 }
 
+ul {
+    list-style-type: none;
+
+}
+
 /*****************************/
 /*When Screen size changes*/
 /*****************************/
 
 @media (min-width: 1024px) {
-
     .home-container{
-        background-color: blue;
+        background-color: #FFF;
+    }
+    ul{
+        font-size: 2.5rem;
+        -webkit-padding-start: 2rem;
+    }
+    .starting-circle{
+        position: absolute;
+        text-align: center;
+        /* left: 41%; */
+        width: 100%;
+        top: 25%;
+    }
+    .starting-circle > .profile-img > img{
+        border-radius: 100%;
+        width: 305px;
+        height: 326px;
+        box-shadow: 10px 10px 5px -5px rgba(0,0,0,0.75);
+        border: 4px solid #000;
+    }
+
+    .main-list{
+        display: initial;
+        padding-right: 1.7rem;
+    }
+
+    .main-list > i {
+        color: #000;
+
+    }
+    .main-list > i:hover {
+        -webkit-transform: scale(1.50);
+        -moz-transform: scale(1.50);
+        -o-transform: scale(1.50);
+        transform: scale(1.50);
     }
 }
 @media (min-width: 768px) and (max-width: 1023px) {
-
     .home-container{
         background-color: red;
     }
 }
 @media (min-width: 320px) and (max-width: 767px) {
-
     .home-container{
-        background-color: #ccc;
+        background-color: blue;
     }
 
 }
