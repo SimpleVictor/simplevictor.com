@@ -35,6 +35,10 @@
         font-size: 1.8em;
     }
 
+    .item > .menuitem{
+        font-size: 5em;
+    }
+
     .icontext{
         opacity: 0;
         font-size: 0.9rem;

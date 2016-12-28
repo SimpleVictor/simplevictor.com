@@ -1,32 +1,42 @@
 
 <!--MOBILE SIDEBAR                                      MOBILE SIDEBAR-->
-<div *ngIf="mobileOn" id="MobileSidebar" class="ui sidebar inverted vertical menu overlay">
-    <a class="item" (click)="GoToResume()">
-        1dsgfdsfdsf
+<div *ngIf="mobileOn" id="MobileSidebar" class="ui sidebar inverted vertical icon menu overlay">
+    <a class="item menuitem" (click)="GoToResume()">
+        <i class="home icon"></i>
+        Home
     </a>
-    <a class="item">
-        2
+    <a class="item menuitem">
+        <i class="block layout icon"></i>
+        Topics
     </a>
-    <a class="item">
-        3
+    <a class="item menuitem">
+        <i class="smile icon"></i>
+        Friends
     </a>
 </div>
 <div class="pusher">
 
 <div class="home-container">
 
+    <!--MENU BUTTON FPOR MOBILE APPLICATION-->
     <div class="menu-circle" *ngIf="mobileOn">
         <i id="menu-button" class="ui circular content icon" (click)="MenuButton()"></i>
     </div>
-    <div class="ui 4:3 embed" data-source="youtube" data-id="HTZudKi36bo" data-placeholder="assets/img/empty.jpg">
-    </div>
+
+    <!--THESE ARE THE VIDEO LINKS-->
+    <!--<div class="ui 4:3 embed" data-source="youtube" data-id="HTZudKi36bo" data-placeholder="assets/img/empty.jpg">-->
+    <!--</div>-->
     <!--<div class="ui embed" data-url="https://www.youtube.com/embed/O6Xo21L0ybE" data-placeholder="assets/img/empty.jpg"></div>-->
     <!--$('.ui.embed').embed();-->
+
+
     <!--STARTING CIRCLE             STARTING CIRCLE-->
     <div class="starting-circle">
+        <!--MAIN PROFILE IMG                MAIN PROFILE IMG-->
         <div class="profile-img">
             <img src="assets/img/profile_pic.png">
         </div>
+        <!--BASIC INFO          BASIC INFO-->
         <div class="basic-info" *ngIf="mobileOn">
             <h1 class="student-text">Victor Le</h1>
             <h3 class="developer-text">Student Developer</h3>
