@@ -1,5 +1,66 @@
-@media (min-width: 320px) and (max-width: 767px) {
+@media (min-width: 310px) and (max-width: 736px) {
     .home-container{
-        background-color: blue;
+        background-color: #FFF;
+    }
+
+    #menu-button{
+        background-color: #000;
+        color: #FFF;
+        margin: 0;
+        position: absolute;
+        top: 5%;
+        left: 5%;
+        font-size: 1.8em;
+    }
+
+    .icontext{
+        opacity: 0;
+        font-size: 0.9rem;
+        font-weight: bolder;
+    }
+
+    #MobileSidebar{
+        z-index: 1000;
+        background-color: rgba(0,0,0,0.7);
+    }
+
+    ul{
+        font-size: 2.5rem;
+        display: inline-flex;
+    }
+    .starting-circle{
+        position: absolute;
+        text-align: center;
+        width: 100%;
+        top: 17%;
+    }
+    .starting-circle > .profile-img > img{
+        border-radius: 100%;
+        width: 305px;
+        height: 326px;
+        box-shadow: 10px 10px 5px -5px rgba(0,0,0,0.75);
+    }
+
+    .main-list{
+        display: initial;
+        padding-right: 1.7rem;
+    }
+
+    .main-list > i {
+        color: #000;
+
+    }
+
+
+    .main-list > i:hover {
+        -webkit-transform: scale(1.50);
+        -moz-transform: scale(1.50);
+        -o-transform: scale(1.50);
+        transform: scale(1.50);
+        cursor: pointer;
+    }
+
+    .main-list > i:hover + br + .icontext {
+        opacity: 1;
     }
 }
