@@ -1,6 +1,28 @@
+@import url('https://fonts.googleapis.com/css?family=Righteous');
 @media (min-width: 310px) and (max-width: 736px) {
     .home-container{
         background-color: #FFF;
+    }
+
+    .student-text{
+        font-family: 'Righteous', cursive;
+        color: #0090D2;
+        font-size: 3rem;
+        letter-spacing: 6px;
+        position: relative;
+        left: 4%;
+        margin-bottom: 0;
+        margin-top: 10%;
+    }
+
+    .developer-text{
+        font-family: 'Righteous', cursive;
+        color: #0063A6;
+        font-size: 1.7rem;
+        letter-spacing: 6px;
+        margin-top: 0;
+        position: relative;
+        left: 4%;
     }
 
     #menu-button{

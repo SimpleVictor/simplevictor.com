@@ -19,10 +19,16 @@
         <i id="menu-button" class="ui circular content icon" (click)="MenuButton()"></i>
     </div>
 
+    <div class="ui embed" data-url="https://www.youtube.com/embed/O6Xo21L0ybE" data-placeholder="assets/img/empty.jpg"></div>
+    <!--$('.ui.embed').embed();-->
     <!--STARTING CIRCLE             STARTING CIRCLE-->
     <div class="starting-circle">
         <div class="profile-img">
             <img src="assets/img/profile_pic.png">
+        </div>
+        <div class="basic-info" *ngIf="mobileOn">
+            <h1 class="student-text">Victor Le</h1>
+            <h3 class="developer-text">Student Developer</h3>
         </div>
         <router-outlet></router-outlet>
         <div class="list-container" *ngIf="!mobileOn">
