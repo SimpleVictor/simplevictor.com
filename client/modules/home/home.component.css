@@ -50,6 +50,7 @@ ul {
         -moz-transform: scale(1.50);
         -o-transform: scale(1.50);
         transform: scale(1.50);
+        cursor: pointer;
     }
 }
 @media (min-width: 768px) and (max-width: 1023px) {

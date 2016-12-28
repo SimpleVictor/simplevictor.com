@@ -3,6 +3,7 @@ import {Component, AfterViewInit} from "@angular/core";
 declare var TweenMax;
 declare var Circ;
 declare var Back;
+declare var Bounce;
 declare var $;
 
 @Component({
@@ -27,7 +28,7 @@ export class HomeComponent implements AfterViewInit {
 
         console.log(this.profileImg);
         TweenMax.from(this.profileImg, 1 ,{scale: 0, ease: Circ.easeOut});
-        TweenMax.from(this.listContainer, 1 ,{"-webkit-padding-start": "108rem", ease: Back.easeInOut, delay: 1.5});
+        TweenMax.from(this.listContainer, 1 ,{"-webkit-padding-start": "108rem", ease: Bounce.easeInOut});
 
     }
     
