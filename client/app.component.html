@@ -1,0 +1,21 @@
+<div class="home-container">
+
+
+    <!--STARTING CIRCLE             STARTING CIRCLE-->
+    <div class="starting-circle">
+        <div class="profile-img">
+            <img src="assets/img/profile_pic.png">
+        </div>
+        <router-outlet></router-outlet>
+        <div class="list-container">
+            <ul>
+                <li (click)="GoToProjects()" class="main-list"><i class="inverted block layout icon"></i><br/><span class="icontext">Projects</span></li>
+                <li (click)="GoToResume()" class="main-list"><i class="inverted file pdf outline icon"></i><br/><span class="icontext">Resume</span></li>
+                <li (click)="GoToGithub()"  class="main-list"><i class="inverted github icon"></i><br/><span class="icontext">Github</span></li>
+                <li (click)="GotoAwards()"  class="main-list"><i class="inverted trophy icon"></i><br/><span class="icontext">Awards</span></li>
+            </ul>
+        </div>
+    </div>
+
+    <!--<router-outlet></router-outlet>-->
+</div>

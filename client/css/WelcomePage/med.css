@@ -1,19 +1,4 @@
-
-.home-container{
-    width: 100%;
-    height: 100%;
-}
-
-ul {
-    list-style-type: none;
-
-}
-
-/*****************************/
-/*When Screen size changes*/
-/*****************************/
-
-@media (min-width: 1024px) {
+@media (min-width: 768px) and (max-width: 1023px) {
     .home-container{
         background-color: #FFF;
     }
@@ -63,16 +48,3 @@ ul {
         opacity: 1;
     }
 }
-@media (min-width: 768px) and (max-width: 1023px) {
-    .home-container{
-        background-color: red;
-    }
-}
-@media (min-width: 320px) and (max-width: 767px) {
-    .home-container{
-        background-color: blue;
-    }
-
-}
-
-
