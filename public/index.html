@@ -14,25 +14,47 @@
         <script src="assets/js/vendor/Reflect.js"></script>
         <script src="assets/js/vendor/system.js"></script>
         <script src="assets/js/vendor/jquery.min.js"></script>
+        <!--<script src="assets/extra/preloadImg.js"></script>-->
         <script src="assets/extra/mobilechecker.js"></script>
         <script src="assets/js/vendor/semantic.min.js"></script>
         <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/plugins/CSSPlugin.min.js"></script>-->
         <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/easing/EasePack.min.js"></script>-->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script>
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
         <!-- 2. Configure SystemJS -->
 
         <!--<script src="systemjs.config.js"></script>-->
         <!--<script>-->
             <!--System.import('app').catch(function(err) { console.error(err); });-->
         <!--</script>-->
+        <style>
+            .no-js #loader { display: none;  }
+            .js #loader { display: block; position: absolute; left: 100px; top: 0; }
+            .se-pre-con {
+                position: fixed;
+                left: 0px;
+                top: 0px;
+                width: 100%;
+                height: 100%;
+                z-index: 9999;
+                background: url(assets/img/Preloader_3.gif) center no-repeat #fff;
+            }
+        </style>
     </head>
 
     <body>
         <app>
-            <div class="ui active inverted dimmer">
-                <div class="ui small loader"></div>
-            </div>
+            <div class="se-pre-con"></div>
+            <!--<div class="ui active inverted dimmer">-->
+                <!--<div class="ui small loader"></div>-->
+            <!--</div>-->
         </app>
+        <script>
+            $(window).load(function() {
+                // Animate loader off screen
+                $(".se-pre-con").fadeOut("slow");
+            });
+        </script>
         <!--  Production mod  -->
         <script src="assets/js/bundle.min.js"></script>
     </body>
