@@ -22,7 +22,12 @@ export class AppComponent implements AfterViewInit {
     mobileOn;
     menuButton;
 
+    topMobileContainer;
+    basicInfoContainer;
+
     sidebar;
+
+    originalContentAnimated:boolean = false;
 
     constructor() {
         //Checks if the user is on a mobile or a desktop
@@ -39,10 +44,17 @@ export class AppComponent implements AfterViewInit {
 
         //STARTING POINT - ANIMATE CONTAINERS IN
         this.profileImg = $(".profile-img")[0];
+        this.basicInfoContainer = $(".basic-info")[0];
         if(!this.mobileOn){
             this.listContainer = $(".list-container")[0];
             TweenMax.from(this.listContainer, 1 ,{"left": "61%", ease: Bounce.easeOut, delay: 0.5});
+
+
         }else{
+            //Set Up Mobile Device (Top Container Background);
+            this.topMobileContainer = $(".empty-container-background")[0];
+            console.log(this.topMobileContainer);
+
             //SIDEBAR
             this.sidebar = $('#MobileSidebar');
             //SIDEBAR SETTINGS
@@ -55,25 +67,48 @@ export class AppComponent implements AfterViewInit {
         //No matter what the profile pic is set for both mobile and desktop
         TweenMax.from(this.profileImg, 1 ,{scale: 0, ease: Back.easeOut});
 
-        //WAIT FOR ON CLICK TO ANIMATE TO THE SECOND PHASE
+
     }
 
-    GoToProjects(){
-        if(this.mobileOn){
-            console.log("mobile");
-        }else{
-            console.log('browser');
-        }
+    AnimateOriginalContent(){
+        //CHECK IF THE CONTENTS BEEN ANIMATED ALREADY
+        //SO WE DON'T TRY TO ANIMATE AGAIN
+        if(!this.originalContentAnimated){
+            if(this.mobileOn){
+            //FOR MOBILE ONLY
+                //Top Container Fill In
+                this.topMobileContainer.style.display = "block";
+                TweenMax.from(this.topMobileContainer, 0.5 ,{scale: 0, ease: Circ.easeOut});
 
+                //Profile Img
+                this.profileImg.style.position = "relative";
+                TweenMax.to(this.profileImg, 1 ,{scale: 0.4, top: "-12rem", ease: Circ.easeOut});
+
+                //Basic Info Container
+                TweenMax.to(this.basicInfoContainer, 0.8, {scale: 0, ease: Circ.easeOut});
+
+                this.originalContentAnimated = true;
+            }else{
+            //FOR DESKTOP BROWSER ONLY
+                console.log('browser');
+                this.originalContentAnimated = true;
+            };
+        };
     }
 
     ToggleMenu(){
         this.sidebar.sidebar('toggle');
     }
 
+    GoToProjects(){
+        this.ToggleMenu();
+        this.AnimateOriginalContent();
+        window.location.href = "/#/projects";
+    }
+
+
     GoToResume(){
         this.ToggleMenu();
-        window.location.href = "/#/projects";
     }
 
     GoToGithub(){
