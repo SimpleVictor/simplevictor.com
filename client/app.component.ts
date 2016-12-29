@@ -16,8 +16,6 @@ declare let TweenMax,// ___
     templateUrl: `./client/app.component.html`
 })
 export class AppComponent implements AfterViewInit {
-
-
     //WEB
     listContainer; //<--GITHUB/RESUME/PROJECTS/ ETC CONTAINER (WEB)
 
@@ -45,7 +43,6 @@ export class AppComponent implements AfterViewInit {
     }
 
     ngAfterViewInit(){
-
         //STARTING POINT - ANIMATE CONTAINERS IN
         this.profileImg = $(".profile-img")[0];
         this.basicInfoContainer = $(".basic-info")[0];
@@ -53,9 +50,10 @@ export class AppComponent implements AfterViewInit {
         //WHEN USER IS ON A DESKTOP BROWSER
             this.listContainer = $(".list-container")[0];
             TweenMax.from(this.listContainer, 1 ,
-                {"left": "61%", ease: Bounce.easeOut, delay: 0.5}); //<--FROM
+                {"left": "76%", ease: Bounce.easeOut, delay: 0.5}); //<--FROM
         }else{
         //WHEN USER IS A MOBILE BROWSER
+            $(".home-container")[0].style.display = "block";
             //Set Up Mobile Device (Top Container Background);
             this.topMobileContainer = $(".empty-container-background")[0];
             console.log(this.topMobileContainer);
@@ -76,32 +74,36 @@ export class AppComponent implements AfterViewInit {
             {scale: 0, ease: Back.easeOut}); //<-- FROM
     }
     AnimateOriginalContent(){
-        //CHECK IF THE CONTENTS BEEN ANIMATED ALREADY
-        //SO WE DON'T TRY TO ANIMATE AGAIN
-        if(!this.originalContentAnimated){
             if(this.mobileOn){
-            //FOR MOBILE ONLY
-                //TOGGLE SIDEBAR
                 this.ToggleMenu();
-                //Top Container Fill In
-                this.topMobileContainer.style.display = "block";
-                TweenMax.from(this.topMobileContainer, 0.5 ,
-                    {scale: 0, ease: Circ.easeOut}); //<-- FROM
+                //CHECK IF THE CONTENTS BEEN ANIMATED ALREADY
+                //SO WE DON'T TRY TO ANIMATE AGAIN
+                if(!this.originalContentAnimated) {
+                    //FOR MOBILE ONLY
+                    //TOGGLE SIDEBAR
+                    //Top Container Fill In
+                    this.topMobileContainer.style.display = "block";
+                    TweenMax.from(this.topMobileContainer, 0.5,
+                        {scale: 0, ease: Circ.easeOut}); //<-- FROM
 
-                this.profileImg.style.position = "relative"; //<--Profile Img
-                TweenMax.to(this.profileImg, 1,
-                    {scale: 0.4, top: "-12rem", ease: Circ.easeOut}); //<-- TO
+                    this.profileImg.style.position = "relative"; //<--Profile Img
+                    TweenMax.to(this.profileImg, 1,
+                        {scale: 0.4, top: "-12rem", ease: Circ.easeOut}); //<-- TO
 
-                //Basic Info Container
-                TweenMax.to(this.basicInfoContainer, 0.8,
-                    {scale: 0, ease: Circ.easeOut}); //<-- TO
-                this.originalContentAnimated = true; //<-- SWITCH CONTENT ANIMATION TO TRUE
+                    //Basic Info Container
+                    TweenMax.to(this.basicInfoContainer, 0.8,
+                        {scale: 0, ease: Circ.easeOut}); //<-- TO
+                    this.originalContentAnimated = true; //<-- SWITCH CONTENT ANIMATION TO TRUE
+                }
             }else{
             //FOR DESKTOP BROWSER ONLY
-                this.ToggleWebComponents(); //<-- Start animating for the starting components
-                this.originalContentAnimated = true; //<-- SWITCH CONTENT ANIMATION TO TRUE
+                //CHECK IF THE CONTENTS BEEN ANIMATED ALREADY
+                //SO WE DON'T TRY TO ANIMATE AGAIN
+                if(!this.originalContentAnimated){
+                    this.ToggleWebComponents(); //<-- Start animating for the starting components
+                    this.originalContentAnimated = true; //<-- SWITCH CONTENT ANIMATION TO TRUE
+                };
             };
-        };
     }
     //TOGGLE MENU TO CLOSE OR OPEN
     ToggleMenu(){

@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Righteous');
 @media (min-width: 310px) and (max-width: 736px) {
     .home-container{
-        background-color: #FFF;
+        display: none;
     }
 
     .student-text{
