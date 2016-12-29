@@ -9,6 +9,9 @@ import { routing } from "./routes";
 
 import { HomeModule } from "./modules/home/home.module";
 import {ProjectsModule} from "./modules/projects/projects.module";
+import {AwardsModule} from "./modules/awards/awards.module";
+import {GithubModule} from "./modules/github/github.module";
+import {ResumeModule} from "./modules/resume/resume.module";
 
 @NgModule({
     imports: [
@@ -16,6 +19,9 @@ import {ProjectsModule} from "./modules/projects/projects.module";
         HttpModule,
         NgSemanticModule,
         HomeModule,
+        AwardsModule,
+        GithubModule,
+        ResumeModule,
         ProjectsModule,
         routing
     ],

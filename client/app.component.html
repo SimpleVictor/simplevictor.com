@@ -6,15 +6,15 @@
         <i class="block layout icon"></i>
         <span class="icon-title">Projects</span>
     </a>
-    <a class="item menuitem">
+    <a class="item menuitem" (click)="GoToResume()">
         <i class="file pdf outline icon"></i>
         <span class="icon-title">Resume</span>
     </a>
-    <a class="item menuitem">
+    <a class="item menuitem" (click)="GoToGithub()">
         <i class="github icon"></i>
         <span class="icon-title">Github</span>
     </a>
-    <a class="item menuitem">
+    <a class="item menuitem" (click)="GoToAwards()">
         <i class="trophy icon"></i>
         <span class="icon-title">Awards</span>
     </a>
@@ -31,7 +31,7 @@
 
     <!--MENU BUTTON FPOR MOBILE APPLICATION-->
     <div class="menu-circle" *ngIf="mobileOn">
-        <i id="menu-button" class="ui circular content icon" (click)="MenuButton()"></i>
+        <i id="menu-button" class="ui circular content icon" (click)="ToggleMenu()"></i>
     </div>
 
     <!--THESE ARE THE VIDEO LINKS-->
@@ -52,14 +52,13 @@
             <h1 class="student-text">Victor Le</h1>
             <h3 class="developer-text">Student Developer</h3>
         </div>
-        <router-outlet></router-outlet>
         <div class="list-container" *ngIf="!mobileOn">
             <!--Check if the app is not on the mobile-->
             <ul>
                 <li (click)="GoToProjects()" class="main-list"><i class="inverted block layout icon"></i><br/><span class="icontext">Projects</span></li>
                 <li (click)="GoToResume()" class="main-list"><i class="inverted file pdf outline icon"></i><br/><span class="icontext">Resume</span></li>
                 <li (click)="GoToGithub()"  class="main-list"><i class="inverted github icon"></i><br/><span class="icontext">Github</span></li>
-                <li (click)="GotoAwards()"  class="main-list"><i class="inverted trophy icon"></i><br/><span class="icontext">Awards</span></li>
+                <li (click)="GoToAwards()"  class="main-list"><i class="inverted trophy icon"></i><br/><span class="icontext">Awards</span></li>
             </ul>
         </div>
     </div>

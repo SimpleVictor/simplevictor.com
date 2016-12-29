@@ -7,6 +7,21 @@ export const routes: Routes = [
         path: 'projects',
         loadChildren: 'client/modules/projects/projects.module#ProjectsModule'
     },
+    {
+        //Awards
+        path: 'awards',
+        loadChildren: 'client/modules/awards/awards.module#AwardsModule'
+    },
+    {
+        //Github
+        path: 'github',
+        loadChildren: 'client/modules/github/github.module#GithubModule'
+    },
+    {
+        //Resume
+        path: 'resume',
+        loadChildren: 'client/modules/resume/resume.module#ResumeModule'
+    },
 ];
 
 export const routing = RouterModule.forRoot(routes, { useHash: true });
