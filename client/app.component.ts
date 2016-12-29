@@ -50,7 +50,7 @@ export class AppComponent implements AfterViewInit {
             this.sidebar.sidebar('setting', "dimPage", false);
             //MENU BUTTON
             this.menuButton = $("#menu-button")[0];
-            TweenMax.from(this.menuButton, 1 ,{"left": "103%",opacity: 0,scale: 2, ease: Circ.easeOut, delay: 0.8});
+            TweenMax.fromTo(this.menuButton, 1 ,{"left": "103%",opacity: 0,scale: 2, ease: Circ.easeOut}, {"left": "5%", opacity: 1, scale: 1,ease: Circ.easeOut, delay: 0.8});
         }
         //No matter what the profile pic is set for both mobile and desktop
         TweenMax.from(this.profileImg, 1 ,{scale: 0, ease: Back.easeOut});
@@ -64,6 +64,7 @@ export class AppComponent implements AfterViewInit {
         }else{
             console.log('browser');
         }
+
     }
 
     ToggleMenu(){
@@ -72,6 +73,7 @@ export class AppComponent implements AfterViewInit {
 
     GoToResume(){
         this.ToggleMenu();
+        window.location.href = "/#/projects";
     }
 
     GoToGithub(){

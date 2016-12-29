@@ -8,6 +8,7 @@ import { AppComponent }  from './app.component';
 import { routing } from "./routes";
 
 import { HomeModule } from "./modules/home/home.module";
+import {ProjectsModule} from "./modules/projects/projects.module";
 
 @NgModule({
     imports: [
@@ -15,6 +16,7 @@ import { HomeModule } from "./modules/home/home.module";
         HttpModule,
         NgSemanticModule,
         HomeModule,
+        ProjectsModule,
         routing
     ],
     providers: [

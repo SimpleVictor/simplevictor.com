@@ -1,17 +1,22 @@
 
 <!--MOBILE SIDEBAR                                      MOBILE SIDEBAR-->
 <div *ngIf="mobileOn" id="MobileSidebar" class="ui sidebar inverted vertical icon menu overlay">
-    <a class="item menuitem" (click)="GoToResume()">
-        <i class="home icon"></i>
-        Home
-    </a>
-    <a class="item menuitem">
+    <a class="item menuitem" (click)="GoToResume()" style="margin-top: 8rem;
+    border-top: 1px solid grey;">
         <i class="block layout icon"></i>
-        Topics
+        <span class="icon-title">Projects</span>
     </a>
     <a class="item menuitem">
-        <i class="smile icon"></i>
-        Friends
+        <i class="file pdf outline icon"></i>
+        <span class="icon-title">Resume</span>
+    </a>
+    <a class="item menuitem">
+        <i class="github icon"></i>
+        <span class="icon-title">Github</span>
+    </a>
+    <a class="item menuitem">
+        <i class="trophy icon"></i>
+        <span class="icon-title">Awards</span>
     </a>
 </div>
 <div class="pusher">
@@ -53,7 +58,7 @@
         </div>
     </div>
 
-    <!--<router-outlet></router-outlet>-->
+    <router-outlet></router-outlet>
 </div>
     <!-- Site content !-->
 </div>

@@ -31,12 +31,24 @@
         margin: 0;
         position: absolute;
         top: 5%;
-        left: 5%;
         font-size: 1.8em;
     }
 
-    .item > .menuitem{
-        font-size: 5em;
+    #menu-button:after{
+        left: 5% ;
+    }
+
+    .item.menuitem{
+        /*font-size: 2rem;*/
+        padding: 1rem;
+    }
+
+    .item.menuitem > i {
+        font-size: 4rem;
+    }
+
+    .icon-title{
+        font-size: 1rem;
     }
 
     .icontext{
