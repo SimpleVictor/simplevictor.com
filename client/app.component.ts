@@ -30,6 +30,8 @@ export class AppComponent implements AfterViewInit {
     profileImg; //<---PROFILE IMG CONTAINER
     originalContentAnimated:boolean = false; //<--CHECKS IF ORIGINAL CONTENT HAS BEEN ANIMATED BEFORE MOVING ON TO THE NEXT PAGE
 
+    ProjectPageOpenedAlready:boolean = false;
+
 
     constructor() {
         //Checks if the user is on a mobile or a desktop
@@ -115,13 +117,20 @@ export class AppComponent implements AfterViewInit {
         TweenMax.to(this.profileImg, 0.6,
             {scale: 0, ease: Circ.easeOut}); //<-- TO
         TweenMax.to(this.listContainer, 1,
-            {top: "-35%", ease: Circ.easeOut, delay: 0.5}); //<-- TO
+            {top: "-38%", ease: Circ.easeOut, delay: 0.5}); //<-- TO
         this.originalContentAnimated = true;
     }
     //PROJECTS COMPONENT
     GoToProjects(){
         this.AnimateOriginalContent();
-        window.location.href = "/#/projects";
+        if(!this.ProjectPageOpenedAlready) {
+            setTimeout(() => {
+                window.location.href = "/#/projects";
+                this.ProjectPageOpenedAlready = true;
+            }, 1000);
+        }else{
+            window.location.href = "/#/projects";
+        }
     }
     //RESUME COMPONENT
     GoToResume(){

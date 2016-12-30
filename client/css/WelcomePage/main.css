@@ -5,6 +5,7 @@
 
 .list-container{
     position: relative;
+    z-index: 100;
 }
 
 #menu-button{
