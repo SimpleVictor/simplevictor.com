@@ -4,6 +4,14 @@
         display: none;
     }
 
+    .screen-small{
+        text-align: center;
+        color: red;
+        position: absolute;
+        top: 40%;
+        left: 16%;
+    }
+
     .student-text{
         font-family: 'Righteous', cursive;
         color: #0090D2;

@@ -8,6 +8,10 @@
         font-weight: bolder;
     }
 
+    .screen-small{
+        display: none;
+    }
+
     ul{
         font-size: 2.5rem;
         display: inline-flex;

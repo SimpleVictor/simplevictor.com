@@ -53,7 +53,8 @@ export class AppComponent implements AfterViewInit {
                 {"left": "76%", ease: Bounce.easeOut, delay: 0.5}); //<--FROM
         }else{
         //WHEN USER IS A MOBILE BROWSER
-            $(".home-container")[0].style.display = "block";
+            $(".home-container")[0].style.display = "block"; //<-- Show the container. We have by default "none" because of the screen size for the desktop version
+            $(".screen-small")[0].style.display = "none"; //<-- Hide the the default message if user is on the web and shrinked screen
             //Set Up Mobile Device (Top Container Background);
             this.topMobileContainer = $(".empty-container-background")[0];
             console.log(this.topMobileContainer);
