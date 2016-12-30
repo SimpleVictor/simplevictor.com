@@ -9,6 +9,9 @@
 
     }
 
+    .ui.card>.image>img, .ui.cards>.card>.image>img{
+        height: 30%;
+    }
 
     #first-row-project{
         position: relative;
