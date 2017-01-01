@@ -30,7 +30,10 @@ export class AppComponent implements AfterViewInit {
     profileImg; //<---PROFILE IMG CONTAINER
     originalContentAnimated:boolean = false; //<--CHECKS IF ORIGINAL CONTENT HAS BEEN ANIMATED BEFORE MOVING ON TO THE NEXT PAGE
 
+    //Checks if The page was opened already for the FIRST time
+    //So when we navigate back to it. It would redo the animation
     ProjectPageOpenedAlready:boolean = false;
+    AwardsPageOpenedAlready:boolean = false;
 
 
     constructor() {
