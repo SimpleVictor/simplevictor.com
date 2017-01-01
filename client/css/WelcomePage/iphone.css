@@ -2,6 +2,7 @@
 @media (min-width: 310px) and (max-width: 736px) {
     .home-container{
         display: none;
+        position:fixed;
     }
 
     .screen-small{
@@ -111,6 +112,10 @@
         width: 305px;
         height: 326px;
         box-shadow: 10px 10px 5px -5px rgba(0,0,0,0.75);
+    }
+
+    profile-img{
+        z-index: 1 !important;
     }
 
     .main-list{

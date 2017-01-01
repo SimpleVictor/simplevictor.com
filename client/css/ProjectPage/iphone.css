@@ -2,32 +2,75 @@
     .projects-container{
         position: absolute;
         width: 100%;
-        height: 100%;
+        top: 19%;
     }
 
-    .ui.special.cards {
-        width: 14rem;
+    #mobile-project{
+        /*position: absolute;*/
+        /*top: 19%;*/
+        width: 100%;
     }
 
-    .ui.card>.image>img, .ui.cards>.card>.image>img{
-        height: 25%;
+    .profile-img{
+        z-index: 5 !important;
+    }
+
+    .mobile-project-img{
+        margin: 0 !important;
+        height: 28% !important;
+    }
+
+    .ui.images{
+     margin: 0;
+    }
+
+    .mobile-column{
+        padding-bottom: 0rem!important;
+        padding-top: 0 !important;
+        margin-bottom: -0.02rem!important
+    }
+
+    .grid-mobile-container{
+        margin-left: 0!important;
+         margin-right: 1rem!important;
+    }
+
+    .ui.grid > *{
+        padding-left: 0;
+        padding-right: 0;
     }
 
 
-    #first-row-project{
-        position: relative;
-        top: 17%;
-    }
-
-    #second-row-project{
-        position: relative;
-        top: 18%;
-    }
 
 
-    .ui.grid > .four.wide.column{
-        width: 14rem !important;
-        /*text-align: center;*/
-    }
+
+
+
+
+
+    /*.ui.special.cards {*/
+        /*width: 14rem;*/
+    /*}*/
+
+    /*.ui.card>.image>img, .ui.cards>.card>.image>img{*/
+        /*height: 25%;*/
+    /*}*/
+
+
+    /*#first-row-project{*/
+        /*position: relative;*/
+        /*top: 17%;*/
+    /*}*/
+
+    /*#second-row-project{*/
+        /*position: relative;*/
+        /*top: 18%;*/
+    /*}*/
+
+
+    /*.ui.grid > .four.wide.column{*/
+        /*width: 14rem !important;*/
+        /*!*text-align: center;*!*/
+    /*}*/
 
 }

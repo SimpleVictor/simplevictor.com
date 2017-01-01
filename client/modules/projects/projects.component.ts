@@ -36,7 +36,18 @@ export class ProjectsComponent implements AfterViewInit{
             //MOBILE WILL BE 2X4
             let BrowserContent = $("#browser-project");
             BrowserContent.css("display", "none");
+
+            //There was a glitch with the profile's img
+            //It wouldn't set up with a higher z-index so we have to manually add this in...
+            let ImgZIndex = $(".profile-img");
+            ImgZIndex.css("z-index", "5");
+
         }else{
+            //HIDE THE MOBILE CONTENT
+            //THE GRID IS SET UP DIFFERENTLY ON THE MOBILE - 2X4
+            //Browser WILL BE 4X2
+            let MobileContent = $("#mobile-project");
+            MobileContent.css("display", "none");
             console.log("Project Component: WEB");
         }
     }

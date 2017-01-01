@@ -117,7 +117,7 @@ export class AppComponent implements AfterViewInit {
         TweenMax.to(this.profileImg, 0.6,
             {scale: 0, ease: Circ.easeOut}); //<-- TO
         TweenMax.to(this.listContainer, 1,
-            {top: "-38%", ease: Circ.easeOut, delay: 0.5}); //<-- TO
+            {top: "-33%", ease: Circ.easeOut, delay: 0.5}); //<-- TO
         this.originalContentAnimated = true;
     }
     //PROJECTS COMPONENT
