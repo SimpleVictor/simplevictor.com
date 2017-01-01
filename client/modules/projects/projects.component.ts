@@ -31,6 +31,11 @@ export class ProjectsComponent implements AfterViewInit{
 
         if(this.mobileChecker){
             console.log("Project Component: MOBILE");
+            //HIDE THE BROWSER CONTENT
+            //THE GRID IS SET UP DIFFERENTLY ON THE BROWSER - 4X2
+            //MOBILE WILL BE 2X4
+            let BrowserContent = $("#browser-project");
+            BrowserContent.css("display", "none");
         }else{
             console.log("Project Component: WEB");
         }

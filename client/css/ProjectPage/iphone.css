@@ -1,4 +1,33 @@
 @media (min-width: 310px) and (max-width: 736px) {
+    .projects-container{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+    }
 
+    .ui.special.cards {
+        width: 14rem;
+    }
+
+    .ui.card>.image>img, .ui.cards>.card>.image>img{
+        height: 25%;
+    }
+
+
+    #first-row-project{
+        position: relative;
+        top: 17%;
+    }
+
+    #second-row-project{
+        position: relative;
+        top: 18%;
+    }
+
+
+    .ui.grid > .four.wide.column{
+        width: 14rem !important;
+        /*text-align: center;*/
+    }
 
 }
