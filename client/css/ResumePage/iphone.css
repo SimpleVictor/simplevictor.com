@@ -1,4 +1,11 @@
 @media (min-width: 310px) and (max-width: 736px) {
 
-
+    #pdf-file{
+        width: 50%;
+        height: 81%;
+        z-index: 1;
+        position: absolute;
+        top: 10%;
+        left: 27%;
+    }
 }

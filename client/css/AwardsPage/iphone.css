@@ -1,3 +1,43 @@
 @media (min-width: 310px) and (max-width: 736px) {
+    .awards-container{
+        position: absolute;
+        width: 100%;
+        top: 19%;
+    }
+
+    #mobile-project{
+        /*position: absolute;*/
+        /*top: 19%;*/
+        width: 100%;
+    }
+
+    .profile-img{
+        z-index: 5 !important;
+    }
+
+    .mobile-project-img{
+        margin: 0 !important;
+        height: 28% !important;
+    }
+
+    .ui.images{
+        margin: 0;
+    }
+
+    .mobile-column{
+        padding-bottom: 0rem!important;
+        padding-top: 0 !important;
+        margin-bottom: -0.02rem!important
+    }
+
+    .grid-mobile-container{
+        margin-left: 0!important;
+        margin-right: 1rem!important;
+    }
+
+    .ui.grid > *{
+        padding-left: 0;
+        padding-right: 0;
+    }
 
 }

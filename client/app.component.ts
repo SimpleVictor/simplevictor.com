@@ -148,7 +148,14 @@ export class AppComponent implements AfterViewInit {
     //AWARDS COMPONENT
     GoToAwards(){
         this.AnimateOriginalContent();
-        window.location.href = "/#/awards";
+        if(!this.ProjectPageOpenedAlready) {
+            setTimeout(() => {
+                window.location.href = "/#/awards";
+                this.AwardsPageOpenedAlready = true;
+            }, 1000);
+        }else{
+            window.location.href = "/#/awards";
+        }
     }
 
 

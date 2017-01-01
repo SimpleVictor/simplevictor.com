@@ -1,3 +1,33 @@
 @media (min-width: 737px) and (max-width: 1023px) {
+    .awards-container{
+        /*position: absolute;*/
+        /*width: 100%;*/
+        /*top: 10%;*/
+        /*height: 100%;*/
 
+
+        position: relative;
+        width: 100%;
+        top: 7rem;
+        height: 90%;
+        overflow: hidden;
+    }
+
+    .ui.special.cards > .card{
+
+    }
+
+    .ui.card>.image>img, .ui.cards>.card>.image>img{
+        height: 30%;
+    }
+
+    #first-row-project{
+        position: relative;
+        top: 10%;
+    }
+
+    #second-row-project{
+        position: relative;
+        top: 9%;
+    }
 }
