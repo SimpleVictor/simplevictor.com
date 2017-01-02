@@ -76,9 +76,7 @@ export class ProjectsComponent implements AfterViewInit{
     }
 
     PreviewApp(overlay, imgContainer){ ///<-- Overlay is the dark background, imgCOntainer containers the button and text
-
-        console.log("No more?");
-
+        //Check if there is a box already highlighted
         if(this.CurrentBox){
             this.ReverseBox(this.CurrentBox);
         }
@@ -90,15 +88,14 @@ export class ProjectsComponent implements AfterViewInit{
             {opacity: 0, ease: Circ.easeOut}); //<-- FROM
         this.ReverseContainer = TweenMax.from($(imgContainer), 0.7,
             {opacity: 0, ease: Circ.easeOut}); //<-- FROM
-
+        //Set Up the new current box
         this.CurrentBox = {
             overlay: $(overlay),
             imgContainer: $(imgContainer)
         };
-
     }
 
-    ReverseBox(current){
+    ReverseBox(current){ //<-- Hide the previous clicked object
             current.imgContainer.css("display", "none");
             current.overlay.css("display", "none");
     }
