@@ -31,9 +31,9 @@ export class AppComponent implements AfterViewInit {
     originalContentAnimated:boolean = false; //<--CHECKS IF ORIGINAL CONTENT HAS BEEN ANIMATED BEFORE MOVING ON TO THE NEXT PAGE
 
     //Checks if The page was opened already for the FIRST time
-    //So when we navigate back to it. It would redo the animation
-    ProjectPageOpenedAlready:boolean = false;
-    AwardsPageOpenedAlready:boolean = false;
+    //So when we navigate back to it. It would redo the animation AND
+    //The Script won't wait 1 Second for the animation to proceed if it did already
+    OriginalAnimationStartedAlready:boolean = false;
 
 
     constructor() {
@@ -126,10 +126,10 @@ export class AppComponent implements AfterViewInit {
     //PROJECTS COMPONENT
     GoToProjects(){
         this.AnimateOriginalContent();
-        if(!this.ProjectPageOpenedAlready) {
+        if(!this.OriginalAnimationStartedAlready) {
             setTimeout(() => {
                 window.location.href = "/#/projects";
-                this.ProjectPageOpenedAlready = true;
+                this.OriginalAnimationStartedAlready = true;
             }, 1000);
         }else{
             window.location.href = "/#/projects";
@@ -148,10 +148,10 @@ export class AppComponent implements AfterViewInit {
     //AWARDS COMPONENT
     GoToAwards(){
         this.AnimateOriginalContent();
-        if(!this.ProjectPageOpenedAlready) {
+        if(!this.OriginalAnimationStartedAlready) {
             setTimeout(() => {
                 window.location.href = "/#/awards";
-                this.AwardsPageOpenedAlready = true;
+                this.OriginalAnimationStartedAlready= true;
             }, 1000);
         }else{
             window.location.href = "/#/awards";

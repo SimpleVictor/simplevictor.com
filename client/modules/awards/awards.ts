@@ -61,9 +61,11 @@ export class AwardsComponent implements AfterViewInit{
         });
     }
 
+    //Start Pop In Animation of the Main Container
     StartAwardsPageAnimation(mobile){
         if(mobile){
-
+            TweenMax.from(this.mainContainer, 0.8,
+                {scale: 0, ease: Circ.easeOut}); //<-- FROM
         }else{
             TweenMax.from(this.mainContainer, 0.8,
                 {scale: 0, ease: Circ.easeOut}); //<-- FROM
