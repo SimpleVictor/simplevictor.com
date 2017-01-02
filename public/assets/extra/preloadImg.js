@@ -5,5 +5,10 @@ function preload(arrayOfImages) {
 }
 
 preload([
-    'assets/img/profile_pic.png'
+    'assets/img/profile_pic.png',
+    'assets/img/alexaux.gif',
+    'assets/img/foodai.gif',
+    'assets/img/frsecurity.gif',
+    'assets/img/safedrive.gif',
+    'assets/img/teamup.gif'
 ]);
