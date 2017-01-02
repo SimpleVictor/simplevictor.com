@@ -1,4 +1,5 @@
 import {Component, AfterViewInit} from "@angular/core";
+import {AnimationChecker} from "./providers/AnimationChecker";
 
 declare let TweenMax,// ___
                 Circ,//    |
@@ -36,7 +37,11 @@ export class AppComponent implements AfterViewInit {
     OriginalAnimationStartedAlready:boolean = false;
 
 
-    constructor() {
+    constructor(public animCheck: AnimationChecker) {
+        //This function is to make sure if the user refreshes the page and they're not on the main route.
+        //Then redirect the user back to the main Route.
+        //This is to avoid animation collisions
+        this.animCheck.CheckUrl();
         //Checks if the user is on a mobile or a desktop
         if(mobilecheck() === true){
             console.log("User is viewing on a mobile broswer");

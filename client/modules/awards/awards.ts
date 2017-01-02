@@ -1,4 +1,5 @@
 import {Component, AfterViewInit} from "@angular/core";
+import {AnimationChecker} from "../../providers/AnimationChecker";
 
 
 declare let TweenMax,// ___
@@ -27,8 +28,10 @@ export class AwardsComponent implements AfterViewInit{
     }
 
     ngAfterViewInit(){
+
         this.SetUpVariables(); // <-- SET UP GLOBAL VARIABLE
         this.StartAwardsPageAnimation(this.mobileChecker); //<--START PAGE ANIMATIONS AT STARTUP
+
 
         if(this.mobileChecker){
             console.log("Project Component: MOBILE");

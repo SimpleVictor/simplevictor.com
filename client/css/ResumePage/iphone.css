@@ -1,11 +1,10 @@
 @media (min-width: 310px) and (max-width: 736px) {
 
-    #pdf-file{
-        width: 50%;
-        height: 81%;
-        z-index: 1;
+    #pdf-file-mobile{
+        height: 100%;
+        width: 100%;
         position: absolute;
-        top: 10%;
-        left: 27%;
+        top: 17%;
     }
+
 }
