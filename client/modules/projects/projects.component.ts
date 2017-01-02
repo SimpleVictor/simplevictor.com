@@ -30,7 +30,7 @@ export class ProjectsComponent implements AfterViewInit{
     }
 
     ngAfterViewInit(){
-
+        console.log("Delete me");
         this.SetUpVariables(); // <-- SET UP GLOBAL VARIABLE
         this.StartProjectPageAnimation(this.mobileChecker); //<--START PAGE ANIMATIONS AT STARTUP
 
