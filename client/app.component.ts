@@ -63,9 +63,10 @@ export class AppComponent implements AfterViewInit {
 
         if(!this.mobileOn){
         //WHEN USER IS ON A DESKTOP BROWSER
+            $(".text-router-desc").css("display", "none");  //<-- Hide the title that is for the mobile
             this.listContainer = $(".list-container")[0];
             TweenMax.from(this.listContainer, 1 ,
-                {"left": "76%", ease: Bounce.easeOut, delay: 0.5}); //<--FROM
+                {"left": "100%", ease: Bounce.easeOut, delay: 0.5}); //<--FROM
         }else{
         //WHEN USER IS A MOBILE BROWSER
             $(".home-container")[0].style.display = "block"; //<-- Show the container. We have by default "none" because of the screen size for the desktop version
@@ -130,7 +131,7 @@ export class AppComponent implements AfterViewInit {
         TweenMax.to(this.profileImg, 0.6,
             {scale: 0, ease: Circ.easeOut}); //<-- TO
         TweenMax.to(this.listContainer, 1,
-            {top: "-36%", ease: Circ.easeOut, delay: 0.5}); //<-- TO
+            {top: "-1%", ease: Circ.easeOut, delay: 0.5}); //<-- TO
         this.originalContentAnimated = true;
     }
     //PROJECTS COMPONENT

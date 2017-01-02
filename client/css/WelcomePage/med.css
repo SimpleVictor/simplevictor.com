@@ -30,7 +30,9 @@
     }
 
     .starting-circle > .list-container{
-        top: 23%;
+        position: absolute;
+        width: 100%;
+        top: 57%;
     }
 
     .starting-circle > .profile-img > img{
@@ -49,6 +51,10 @@
         color: #000;
 
     }
+    .main-list > a > i {
+        color: #000;
+
+    }
 
 
     .main-list > i:hover {
@@ -60,6 +66,9 @@
     }
 
     .main-list > i:hover + br + .icontext {
+        opacity: 1;
+    }
+    .resume-glitch:hover + br + .icontext{
         opacity: 1;
     }
 }

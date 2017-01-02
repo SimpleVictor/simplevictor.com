@@ -31,6 +31,107 @@
     }
 
     .starting-circle > .list-container{
+        /*left: 40% !important;*/
+        top: 57%;
+        position: absolute;
+        width: 100%;
+    }
+
+    .starting-circle > .profile-img > img{
+        border-radius: 100%;
+        width: 305px;
+        height: 326px;
+        box-shadow: 10px 10px 5px -5px rgba(0,0,0,0.75);
+    }
+
+    .main-list{
+        display: initial;
+        padding-right: 1.7rem;
+    }
+
+    .main-list > a > i {
+        color: #000;
+
+    }
+
+    .main-list > i {
+        color: #000;
+
+    }
+
+
+    .main-list > i:hover {
+        -webkit-transform: scale(1.50);
+        -moz-transform: scale(1.50);
+        -o-transform: scale(1.50);
+        transform: scale(1.50);
+        cursor: pointer;
+    }
+
+    .main-list> a > i:hover {
+        -webkit-transform: scale(1.50);
+        -moz-transform: scale(1.50);
+        -o-transform: scale(1.50);
+        transform: scale(1.50);
+        cursor: pointer;
+    }
+
+
+    .main-list > i:hover + br + .icontext {
+        opacity: 1;
+    }
+    .main-list > a > i:hover + br + .icontext {
+        opacity: 1;
+    }
+    .resume-glitch:hover + br + .icontext{
+        opacity: 1;
+    }
+}
+
+
+
+
+
+
+
+
+
+@media (min-width: 1524px) {
+    .starting-circle > .list-container{
+        /*left: 44%;*/
+        width: 100%;
+        top: 57%;
+        position: absolute;
+    }
+
+    .home-container{
+        background-color: #FFF;
+    }
+    .icontext{
+        opacity: 0;
+        font-size: 0.9rem;
+        font-weight: bolder;
+    }
+
+    .screen-small{
+        display: none;
+    }
+
+
+    ul{
+        font-size: 2.5rem;
+        display: inline-flex;
+    }
+    .starting-circle{
+        text-align: center;
+        width: 100%;
+        /*top: 23%;*/
+        height: 100%;
+        position: absolute;
+    }
+
+    .starting-circle > .profile-img{
+        position: relative;
         top: 23%;
     }
 
@@ -48,6 +149,10 @@
 
     .main-list > i {
         color: #000;
+    }
+
+    .main-list > a > i {
+        color: #000;
 
     }
 
@@ -60,7 +165,21 @@
         cursor: pointer;
     }
 
+    .main-list> a > i:hover {
+        -webkit-transform: scale(1.50);
+        -moz-transform: scale(1.50);
+        -o-transform: scale(1.50);
+        transform: scale(1.50);
+        cursor: pointer;
+    }
+
+
     .main-list > i:hover + br + .icontext {
         opacity: 1;
     }
+
+    .resume-glitch:hover + br + .icontext{
+        opacity: 1;
+    }
+
 }

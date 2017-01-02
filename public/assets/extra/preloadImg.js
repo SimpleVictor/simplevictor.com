@@ -14,6 +14,7 @@ preload([
     'assets/img/phreshfood.jpg',
     'assets/img/safedrive.jpg',
     'assets/img/wrinkle.png',
+    'assets/img/mybaymax.png',
     //ProfileBackground
     'assets/img/profile_background.png',
     //GIFS

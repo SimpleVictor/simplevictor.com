@@ -6,7 +6,7 @@
         /*height: 100%;*/
 
 
-        position: relative;
+        position: absolute;
         width: 100%;
         top: 7rem;
         height: 90%;
@@ -18,7 +18,8 @@
     }
 
     .ui.card>.image>img, .ui.cards>.card>.image>img{
-        height: 30%;
+        height: 250px;
+        width: 100%;
     }
 
     #first-row-project{
