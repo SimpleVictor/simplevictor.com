@@ -148,10 +148,10 @@ export class AppComponent implements AfterViewInit {
     }
     //RESUME COMPONENT
     GoToResume(){
-        this.textDescription.innerHTML = "Resume";
-        this.AnimateOriginalContent();
-        this.OriginalAnimationStartedAlready = true;
-        window.location.href = "/#/resume";
+        // this.textDescription.innerHTML = "Resume";
+        // this.AnimateOriginalContent();
+        // this.OriginalAnimationStartedAlready = true;
+        // window.location.href = "/#/resume";
     }
     //GITHUBCOMPONENT
     GoToGithub(){
