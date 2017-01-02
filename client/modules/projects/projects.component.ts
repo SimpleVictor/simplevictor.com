@@ -20,6 +20,11 @@ export class ProjectsComponent implements AfterViewInit{
     mobileChecker; //<-- obviously
     mainContainer; //<--main container for the this component
 
+    ReverseContainer;
+    ReverseOverlay;
+
+    CurrentBox;
+
     constructor() {
         this.mobileChecker = mobilecheck(); //<--Init the function
     }
@@ -68,6 +73,34 @@ export class ProjectsComponent implements AfterViewInit{
             TweenMax.from(this.mainContainer, 0.8,
                 {scale: 0, ease: Circ.easeOut}); //<-- FROM
         }
+    }
+
+    PreviewApp(overlay, imgContainer){ ///<-- Overlay is the dark background, imgCOntainer containers the button and text
+
+        console.log("No more?");
+
+        if(this.CurrentBox){
+            this.ReverseBox(this.CurrentBox);
+        }
+        //overlay and container is set by default HIDDEN
+        $(overlay).css("display", "flex");
+        $(imgContainer).css("display", "flex");
+        //Tween Them to come in more naturally
+        this.ReverseOverlay = TweenMax.from($(overlay), 0.7,
+            {opacity: 0, ease: Circ.easeOut}); //<-- FROM
+        this.ReverseContainer = TweenMax.from($(imgContainer), 0.7,
+            {opacity: 0, ease: Circ.easeOut}); //<-- FROM
+
+        this.CurrentBox = {
+            overlay: $(overlay),
+            imgContainer: $(imgContainer)
+        };
+
+    }
+
+    ReverseBox(current){
+            current.imgContainer.css("display", "none");
+            current.overlay.css("display", "none");
     }
 
 

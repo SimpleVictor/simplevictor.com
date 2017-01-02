@@ -14,6 +14,8 @@ preload([
     'assets/img/phreshfood.jpg',
     'assets/img/safedrive.jpg',
     'assets/img/wrinkle.png',
+    //ProfileBackground
+    'assets/img/profile_background.png',
     //GIFS
     'assets/img/alexaux.gif',
     'assets/img/foodai.gif',
