@@ -1,0 +1,15 @@
+/*FULL1*/
+@media (min-width: 1024px) {
+
+}
+
+/*MEDIUM1*/
+@media (min-width: 737px) and (max-width: 1023px) {
+
+}
+
+
+/*MOBILE1*/
+@media (min-width: 310px) and (max-width: 736px) {
+
+}

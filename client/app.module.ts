@@ -13,6 +13,7 @@ import {AwardsModule} from "./modules/awards/awards.module";
 import {GithubModule} from "./modules/github/github.module";
 import {ResumeModule} from "./modules/resume/resume.module";
 import {AnimationChecker} from "./providers/AnimationChecker";
+import {ProjectSingleModule} from "./modules/projectsingle/projectsingle.module";
 
 @NgModule({
     imports: [
@@ -24,6 +25,7 @@ import {AnimationChecker} from "./providers/AnimationChecker";
         GithubModule,
         ResumeModule,
         ProjectsModule,
+        ProjectSingleModule,
         routing
     ],
     providers: [

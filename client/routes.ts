@@ -22,6 +22,11 @@ export const routes: Routes = [
         path: 'resume',
         loadChildren: 'client/modules/resume/resume.module#ResumeModule'
     },
+    {
+        //Project Single
+        path: 'single',
+        loadChildren: 'client/modules/projectsingle/projectsingle.module#ProjectSingleModule'
+    }
 ];
 
 export const routing = RouterModule.forRoot(routes, { useHash: true });
