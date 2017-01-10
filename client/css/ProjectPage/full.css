@@ -6,11 +6,19 @@
         /*height: 100%;*/
 
 
+        /*position: absolute;*/
+        /*width: 100%;*/
+        /*top: 7rem;*/
+        /*height: 90%;*/
+        /*overflow: hidden;*/
+        top: 0;
         position: absolute;
         width: 100%;
-        top: 7rem;
-        height: 90%;
-        overflow: hidden;
+        height: 100%;
+    }
+
+    #browser-project{
+        height: 100%;
     }
 
     .ui.special.cards > .card{

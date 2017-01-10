@@ -129,10 +129,10 @@ export class AppComponent implements AfterViewInit {
     }
     //THE ANIMATIONS FOR THE STARTIING COMPONENTS ON THE WEB BROSWER
     ToggleWebComponents(){
-        TweenMax.to(this.profileImg, 0.6,
-            {scale: 0, ease: Circ.easeOut}); //<-- TO
         TweenMax.to(this.listContainer, 1,
-            {top: "-1%", ease: Circ.easeOut, delay: 0.5}); //<-- TO
+            {top: "1%","position": "fixed", ease: Circ.easeOut}); //<-- TO
+        TweenMax.to(this.profileImg, 0.6,
+            {scale: 0,ease: Circ.easeOut}); //<-- TO
         this.originalContentAnimated = true;
     }
     //PROJECTS COMPONENT
