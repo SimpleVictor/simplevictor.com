@@ -28,7 +28,7 @@
     .mobile-column{
         padding-bottom: 0rem!important;
         padding-top: 0 !important;
-        margin-bottom: -0.02rem!important
+        margin-bottom: -0.02rem!important;
     }
 
     .grid-mobile-container{
@@ -90,7 +90,21 @@
 
 
     .ui.card{
-        max-width: 96%;
+        max-width: 82% !important;
+    }
+
+    .ui.two.column.centered.grid{
+        margin: 0;
+    }
+
+    .ui.two.column.centered.grid > .column{
+        margin: 0;
+        left: 4%;
+        text-align: center;
+        top: 3rem;
+        position: relative;
+        padding: 0;
+        padding-bottom: 1rem;
     }
 
 
