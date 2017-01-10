@@ -136,6 +136,7 @@ export class AppComponent implements AfterViewInit {
     }
     //PROJECTS COMPONENT
     GoToProjects(){
+        console.log("Projects");
         this.textDescription.innerHTML = "Projects";
         this.AnimateOriginalContent();
         if(!this.OriginalAnimationStartedAlready) {
