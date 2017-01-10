@@ -1,4 +1,9 @@
 @media (min-width: 1024px) {
+
+    .pusher{
+        width: 100%;
+        height: 100%;
+    }
     .home-container{
         background-color: #FFF;
     }
@@ -20,9 +25,8 @@
     .starting-circle{
         text-align: center;
         width: 100%;
-        /*top: 23%;*/
         height: 100%;
-        position: absolute;
+        position: relative;
     }
 
     .starting-circle > .profile-img{
@@ -31,10 +35,9 @@
     }
 
     .starting-circle > .list-container{
-        /*left: 40% !important;*/
-        top: 57%;
-        position: absolute;
         width: 100%;
+        top: 24%;
+        position: relative;
     }
 
     .starting-circle > .profile-img > img{
@@ -97,11 +100,16 @@
 
 
 @media (min-width: 1524px) {
-    .starting-circle > .list-container{
-        /*left: 44%;*/
+
+    .pusher{
         width: 100%;
-        top: 57%;
-        position: absolute;
+        height: 100%;
+    }
+
+    .starting-circle > .list-container{
+        width: 100%;
+        top: 24%;
+        position: relative;
     }
 
     .home-container{
@@ -123,11 +131,9 @@
         display: inline-flex;
     }
     .starting-circle{
-        text-align: center;
         width: 100%;
-        /*top: 23%;*/
         height: 100%;
-        position: absolute;
+        position: relative;
     }
 
     .starting-circle > .profile-img{

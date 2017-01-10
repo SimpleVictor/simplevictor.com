@@ -26,51 +26,58 @@
 </div>
 <div class="pusher">
 
-<div class="home-container">
+    <div class="home-container">
 
 
-    <!--TOP CONTAINER BACKGROUND            TOP CONTAINER BACKGROUND-->
-    <div class="empty-container-background">
-        <h1 class="text-router-desc">Home</h1>
-    </div>
-
-    <!--MENU BUTTON FPOR MOBILE APPLICATION-->
-    <div class="menu-circle" *ngIf="mobileOn">
-        <i id="menu-button" class="ui circular content icon" (click)="ToggleMenu()"></i>
-    </div>
-
-    <!--THESE ARE THE VIDEO LINKS-->
-    <!--<div class="ui 4:3 embed" data-source="youtube" data-id="HTZudKi36bo" data-placeholder="assets/img/empty.jpg">-->
-    <!--</div>-->
-    <!--<div class="ui embed" data-url="https://www.youtube.com/embed/O6Xo21L0ybE" data-placeholder="assets/img/empty.jpg"></div>-->
-    <!--$('.ui.embed').embed();-->
-
-
-    <!--STARTING CIRCLE             STARTING CIRCLE-->
-    <div class="starting-circle">
-        <!--MAIN PROFILE IMG                MAIN PROFILE IMG-->
-        <div class="profile-img">
-            <img src="assets/img/profile_pic.png">
+        <!--TOP CONTAINER BACKGROUND            TOP CONTAINER BACKGROUND-->
+        <div class="empty-container-background">
+            <h1 class="text-router-desc">Home</h1>
         </div>
-        <!--BASIC INFO          BASIC INFO-->
-        <div class="basic-info" *ngIf="mobileOn">
-            <h1 class="student-text">Victor Le</h1>
-            <h3 class="developer-text">Student Developer</h3>
-        </div>
-        <div class="list-container" *ngIf="!mobileOn">
-            <!--Check if the app is not on the mobile-->
-            <ul>
-                <li (click)="GoToProjects()" class="main-list"><i class="inverted block layout icon"></i><br/><span class="icontext">Projects</span></li>
-                <li class="main-list"><a class="resume-glitch" href="https://drive.google.com/open?id=0B1LYKP0_HmH5N09BWE9LbmViRlU" target="_blank"><i class="inverted file pdf outline icon"></i></a><br/><span class="icontext">Resume</span></li>
-                <li class="main-list"><a class="resume-glitch" href="https://github.com/simplevictor" target="_blank"><i class="inverted github icon"></i></a><br/><span class="icontext">Github</span></li>
-                <li (click)="GoToAwards()"  class="main-list"><i class="inverted trophy icon"></i><br/><span class="icontext">Awards</span></li>
-            </ul>
-        </div>
-    </div>
 
-    <router-outlet></router-outlet>
-</div>
-    <!-- Site content !-->
+        <!--MENU BUTTON FPOR MOBILE APPLICATION-->
+        <div class="menu-circle" *ngIf="mobileOn">
+            <i id="menu-button" class="ui circular content icon" (click)="ToggleMenu()"></i>
+        </div>
+
+        <!--THESE ARE THE VIDEO LINKS-->
+        <!--<div class="ui 4:3 embed" data-source="youtube" data-id="HTZudKi36bo" data-placeholder="assets/img/empty.jpg">-->
+        <!--</div>-->
+        <!--<div class="ui embed" data-url="https://www.youtube.com/embed/O6Xo21L0ybE" data-placeholder="assets/img/empty.jpg"></div>-->
+        <!--$('.ui.embed').embed();-->
+
+
+
+
+
+        <!--STARTING CIRCLE             STARTING CIRCLE-->
+        <div class="starting-circle">
+            <!--MAIN PROFILE IMG                MAIN PROFILE IMG-->
+            <div class="profile-img">
+                <img src="assets/img/profile_pic.png">
+            </div>
+            <!--BASIC INFO          BASIC INFO-->
+            <div class="basic-info" *ngIf="mobileOn">
+                <h1 class="student-text">Victor Le</h1>
+                <h3 class="developer-text">Student Developer</h3>
+            </div>
+            <div class="list-container" *ngIf="!mobileOn">
+                <!--Check if the app is not on the mobile-->
+                <ul>
+                    <li (click)="GoToProjects()" class="main-list"><i class="inverted block layout icon"></i><br/><span class="icontext">Projects</span></li>
+                    <li class="main-list"><a class="resume-glitch" href="https://drive.google.com/open?id=0B1LYKP0_HmH5N09BWE9LbmViRlU" target="_blank"><i class="inverted file pdf outline icon"></i></a><br/><span class="icontext">Resume</span></li>
+                    <li class="main-list"><a class="resume-glitch" href="https://github.com/simplevictor" target="_blank"><i class="inverted github icon"></i></a><br/><span class="icontext">Github</span></li>
+                    <li (click)="GoToAwards()"  class="main-list"><i class="inverted trophy icon"></i><br/><span class="icontext">Awards</span></li>
+                </ul>
+            </div>
+        </div>
+
+
+
+
+
+        <router-outlet></router-outlet>
+    </div>
+        <!-- Site content !-->
 
 </div>
 
