@@ -1,7 +1,9 @@
 @media (min-width: 310px) and (max-width: 736px) {
     .projects-container{
-        position: absolute;
+        /*position: absolute;*/
         width: 100%;
+        height: 100%;
+        overflow: auto;
         top: 15%;
     }
 
