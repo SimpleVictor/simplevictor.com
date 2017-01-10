@@ -13,12 +13,16 @@
         overflow: hidden;
     }
 
+    .alexaworkaround{
+        font-size: 0.96rem;
+    }
+
     .ui.special.cards > .card{
 
     }
 
     .ui.card>.image>img, .ui.cards>.card>.image>img{
-        height: 250px;
+        height: 200px;
         width: 100%;
     }
 

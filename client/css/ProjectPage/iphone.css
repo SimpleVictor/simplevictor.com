@@ -2,23 +2,24 @@
     .projects-container{
         position: absolute;
         width: 100%;
-        top: 19%;
+        top: 15%;
     }
 
     #mobile-project{
-        /*position: absolute;*/
-        /*top: 19%;*/
         width: 100%;
+        position: relative;
+        height: 100%;
+        text-align: center;
     }
 
     .profile-img{
         z-index: 5 !important;
     }
 
-    .mobile-project-img{
-        margin: 0 !important;
-        height: 28% !important;
-    }
+    /*.mobile-project-img{*/
+        /*margin: 0 !important;*/
+        /*height: 28% !important;*/
+    /*}*/
 
     .ui.images{
      margin: 0;
@@ -73,6 +74,24 @@
         width: 100%;
     }
 
+
+
+    /*NEW ONE*/
+    .mobile-project-img{
+        margin: 0 !important;
+        height: 100%;
+        width: 82%;
+    }
+
+    .ui.equal.width.grid{
+        height: 12rem;
+        margin: 1rem !important;
+    }
+
+
+    .ui.card{
+        max-width: 96%;
+    }
 
 
 

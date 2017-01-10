@@ -5,6 +5,10 @@
         position:fixed;
     }
 
+    html{
+        background: #f4f4f4 !important;
+    }
+
     .screen-small{
         text-align: center;
         color: red;
