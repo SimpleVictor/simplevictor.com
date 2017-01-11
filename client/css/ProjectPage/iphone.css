@@ -3,7 +3,8 @@
         /*position: absolute;*/
         width: 100%;
         height: 100%;
-        overflow: auto;
+        overflow-x: hidden;
+        overflow-y: scroll;
         top: 15%;
     }
 
@@ -70,7 +71,7 @@
     .img-button{
         position: absolute;
         top: 59%;
-        left: 32%;
+        left: 26%;
     }
 
     .img-text-message{

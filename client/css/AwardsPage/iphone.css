@@ -2,7 +2,8 @@
     .awards-container{
         width: 100%;
         height: 100%;
-        overflow: auto;
+        overflow-x: hidden;
+        overflow-y: scroll;
         top: 15%;
     }
 
@@ -47,38 +48,6 @@
     }
 
 
-    .img-overlay{
-        position: absolute;
-        background: rgba(0,0,0,0.5);
-        height: 100%;
-        width: 100%;
-        display: none;
-    }
-
-    .img-container{
-        position: absolute;
-        color: #FFF;
-        width: 100%;
-        height: 100%;
-        display: none;
-    }
-
-    .img-button{
-        position: absolute;
-        top: 59%;
-        left: 32%;
-    }
-
-    .img-text-message{
-        position: absolute;
-        top: 30%;
-        font-size: 1.5rem;
-        text-align: center;
-        width: 100%;
-    }
-
-
-
     /*NEWS ONE*/
     .myimg{
         height: 11rem !important;
@@ -114,6 +83,41 @@
         padding: 0;
         padding-bottom: 1rem;
     }
+
+
+    /*For The Click Background*/
+    .img-overlay{
+        position: absolute;
+        background: rgba(0,0,0,0.5);
+        height: 100%;
+        width: 100%;
+        z-index: 1;
+        display: none;
+    }
+
+    .img-container{
+        position: absolute;
+        color: #FFF;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        display: none;
+    }
+
+    .img-button{
+        position: absolute;
+        top: 59%;
+        left: 26%;
+    }
+
+    .img-text-message{
+        position: absolute;
+        top: 30%;
+        font-size: 1.5rem;
+        text-align: center;
+        width: 100%;
+    }
+
 
 
 }
