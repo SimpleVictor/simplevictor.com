@@ -1,4 +1,5 @@
 import {Component, AfterViewInit} from "@angular/core";
+import {ActivatedRoute} from "@angular/router";
 
 declare let TweenMax,// ___
     Circ,//    |
@@ -18,11 +19,30 @@ export class ProjectSingle implements AfterViewInit{
     mobileChecker; //<-- obviously
     mainContainer; //<--main container for the this component
 
-    constructor() {
+    ParamProject;
+    Project;
+
+
+    //Used to make sure the tab finish animating before clicking another one
+    TabReady: boolean = true;
+
+
+    constructor(public activatedRoute: ActivatedRoute) {
         this.mobileChecker = mobilecheck(); //<--Init the function
+        this.ParamProject = this.activatedRoute.params.subscribe((params) => {
+            this.ParamProject = params["id"];
+            console.log(this.ParamProject);
+        })
     }
 
     ngAfterViewInit(){
+
+        $('.menu .item')
+            .tab()
+        ;
+
+        this.StartAnimating();
+
         console.log(this.mobileChecker);
         if(this.mobileChecker){
             console.log("Project Component: MOBILE");
@@ -44,6 +64,27 @@ export class ProjectSingle implements AfterViewInit{
             let MobileContent = $(".project-single-mobile-container");
             MobileContent.css("display", "none");
             console.log("Project Component: WEB");
+        }
+    }
+
+    StartAnimating(){
+        TweenMax.from($(".project-single-container"), 0.5, {scale: 0, ease: Circ.easeOut});
+    }
+
+    //Back Button
+    BackButton(){
+        window.location.href = "/#/projects";
+    }
+
+    AnimateTabs(tab){
+        let vm = this;
+        let ReadyNow = () => {
+            this.TabReady = true;
+        }
+        //Condition statement is to avoid having the user click multiple times
+        if(this.TabReady){
+            this.TabReady = false;
+            TweenMax.from($(tab), 0.5, {scale: 0, ease: Circ.easeOut, onComplete: ReadyNow});
         }
     }
 

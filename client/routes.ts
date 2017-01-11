@@ -24,7 +24,7 @@ export const routes: Routes = [
     },
     {
         //Project Single
-        path: 'single',
+        path: 'single/:id',
         loadChildren: 'client/modules/projectsingle/projectsingle.module#ProjectSingleModule'
     }
 ];

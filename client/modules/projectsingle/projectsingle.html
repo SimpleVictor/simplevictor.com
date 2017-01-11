@@ -1,1 +1,37 @@
-<h1>Project single</h1>
+<div class="project-single-container">
+
+
+    <!--MOBILE          MOBILE              MOBILE              MOBILE-->
+    <div class="project-single-mobile-container">
+
+        <div class="back-circle">
+            <i id="menu-button" class="ui arrow left icon" (click)="BackButton()"></i>
+
+            <div class="ui pointing secondary menu">
+                <a class="active item" data-tab="description" (click)="AnimateTabs(tab1)"><i class="ui info icon"></i>Info</a>
+                <a class="item" data-tab="video" (click)="AnimateTabs(tab2)"><i class="ui video play outline icon"></i>Video</a>
+                <a class="item" data-tab="developers" (click)="AnimateTabs(tab3)"><i class="ui users icon"></i>Developers</a>
+            </div>
+            <div #tab1 class="ui tab segment active" data-tab="description">
+                <h1>First</h1>
+            </div>
+
+            <div #tab2 class="ui tab segment" data-tab="video">
+                <h1>second</h1>
+            </div>
+
+            <div #tab3 class="ui tab segment" data-tab="developers">
+                <h1>third</h1>
+            </div>
+
+
+        </div>
+
+    </div>
+
+    <!--WEB BROWSER     WEB BROWSER         WEB BROWSER         WEB BROWSER-->
+    <div class="project-single-browser-container">
+        <h1>Browser</h1>
+    </div>
+
+</div>

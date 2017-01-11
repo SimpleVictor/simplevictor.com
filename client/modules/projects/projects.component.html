@@ -197,11 +197,11 @@
     <div id="mobile-project">
         <div class="ui two column centered grid" style="margin-top: 7rem;">
             <div class="column">
-                <div class="ui card">
+                <div class="ui card" #card1>
                     <div class="img-overlay" #overlay1></div>
                     <div class="img-container" #imgContainer1>
                         <h1 class="img-text-message">Fitness Strong</h1>
-                        <button class="positive ui button img-button">View</button>
+                        <button class="positive ui button img-button" (click)="GoToSingleAppPage(card1)">View</button>
                     </div>
                     <!--<a class="image" href="/#/projects">-->
                         <img class="myimg" (click)="PreviewApp(overlay1, imgContainer1)" src="assets/img/fitness.jpg">
