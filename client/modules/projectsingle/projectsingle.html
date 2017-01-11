@@ -6,26 +6,34 @@
 
         <div class="back-circle">
             <i id="menu-button" class="ui arrow left icon" (click)="BackButton()"></i>
+        </div>
+        <br/>
 
-            <div class="ui pointing secondary menu">
-                <a class="active item" data-tab="description" (click)="AnimateTabs(tab1)"><i class="ui info icon"></i>Info</a>
-                <a class="item" data-tab="video" (click)="AnimateTabs(tab2)"><i class="ui video play outline icon"></i>Video</a>
-                <a class="item" data-tab="developers" (click)="AnimateTabs(tab3)"><i class="ui users icon"></i>Developers</a>
-            </div>
-            <div #tab1 class="ui tab segment active" data-tab="description">
+
+        <div class="ui pointing secondary menu">
+            <a class="active item" data-tab="description" (click)="AnimateTabs(tab1)"><i class="ui info circle icon"></i>Info</a>
+            <a class="item" data-tab="video" (click)="AnimateTabs(tab2)"><i class="ui video play outline icon"></i>Video</a>
+            <a class="item" data-tab="developers" (click)="AnimateTabs(tab3)"><i class="ui users icon"></i>Developers</a>
+        </div>
+        <div class="ui tab segment active" data-tab="description">
+            <div #tab1 class="ui segment">
                 <h1>First</h1>
             </div>
+        </div>
 
-            <div #tab2 class="ui tab segment" data-tab="video">
+        <div class="ui tab segment" data-tab="video">
+            <div #tab2 class="ui segment">
                 <h1>second</h1>
             </div>
+        </div>
 
-            <div #tab3 class="ui tab segment" data-tab="developers">
+        <div class="ui tab segment" data-tab="developers">
+            <div #tab3 class="ui segment">
                 <h1>third</h1>
             </div>
-
-
         </div>
+
+
 
     </div>
 

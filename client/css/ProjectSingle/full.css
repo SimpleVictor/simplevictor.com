@@ -41,13 +41,22 @@
     }
 
     /*CHnage the size of the tabs*/
-    .ui-menu .item > i.icon{
-        font-size: 2em;
+    .menu > .item{
+        font-size: 1rem;
     }
 
     .ui.tab.segment{
-        margin: auto 1.5rem;
+        /*margin: auto 1.5rem;*/
+        margin: 0;
+        height: 100%;
+        background-color: #E9EBEE;
     }
+
+    .ui.pointing.secondary.menu{
+        margin-bottom: 0;
+    }
+
+
 
 
 }
