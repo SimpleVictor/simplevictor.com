@@ -89,6 +89,24 @@ export class ProjectSingle implements AfterViewInit{
         }
     }
 
+    PictureClicked(){
+        setTimeout(() => {
+            $(".fancybox").fancybox({
+                padding : 0,
+                beforeLoad: function() {
+                    this.title = $(this.element).attr('caption');
+                },
+                helpers : {
+                    overlay : {
+                        css : {
+                            'background' : 'rgba(0, 0, 0, 0.5)'
+                        }
+                    }
+                }
+            });
+        }, 500);
+    }
+
 
 
 

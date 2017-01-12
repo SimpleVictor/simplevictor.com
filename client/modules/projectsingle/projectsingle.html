@@ -38,7 +38,7 @@
             <div #tab2 class="ui segment">
                 <h1>Photos</h1>
                 <div class="ui small images">
-                    <img *ngFor="let i of Project.extra_picture" [src]="i">
+                    <img *ngFor="let i of Project.extra_picture" [src]="i.link">
                 </div>
             </div>
         </div>
@@ -63,9 +63,11 @@
 
     <!--WEB BROWSER     WEB BROWSER         WEB BROWSER         WEB BROWSER-->
     <div class="project-single-browser-container">
+
+
         <div class="ui pointing secondary menu" id="web_menu">
             <a class="active item" data-tab="first">About</a>
-            <a class="item" data-tab="second">Pictures</a>
+            <a class="item" data-tab="second" (click)="PictureClicked()">Pictures</a>
             <a class="item" data-tab="third">Video</a>
             <a class="item" data-tab="fourth">Developers</a>
         </div>
@@ -77,6 +79,10 @@
 
         <div class="ui tab segment browser-desc-segment" data-tab="second">
             <h1>Pictures</h1>
+            <div class="ui tiny images">
+                <a class="fancybox" *ngFor="let i of Project.extra_picture" caption="i.desc" rel="group" [href]="i.link"><img [src]="i.link"></a>
+            </div>
+            <h3>Click to enlarge =]</h3>
         </div>
 
         <div class="ui tab segment browser-desc-segment" data-tab="third">

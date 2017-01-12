@@ -1,11 +1,13 @@
+let mainCoverMobilePicture = "frsecurity/frsecurity1.jpg";
 export const AllProjects = {
+
+    //FITNESS STRONG            FITNESS STRONG              FITNESS STRONG              FITNESS STRONG
     "fitness-strong": {
         name: "Fitness Strong",
         main_cover_picture: "assets/img/projects/fitness_strong/fitness4.png",
         mobile: {
             is_mobile: true,
             main_cover_mobile_picture: "assets/img/projects/fitness_strong/fitness4.png",
-            show_store_icon: true
         },
         developers: [
             {
@@ -18,41 +20,377 @@ export const AllProjects = {
                 contribution: "Everything"
             }
         ],
+        show_android_icon: true,
+        show_ios_icon: true,
         android_link: "https://play.google.com/store/apps/details?id=com.ionicframework.moregains296317",
         ios_link: "https://itunes.apple.com/us/app/fitness-strong/id1176821387",
         description: "Simplistic fitness application that generates daily workouts filtered by body parts and contains how-to videos for over 5000 exercises. Built using jQuery UI Plugins to enhance user experiences.",
         app_img: "www.google.com/img",
         video: "www.youtube.com",
         extra_picture: [
-            "assets/img/projects/fitness_strong/fitness1.png",
-            "assets/img/projects/fitness_strong/fitness2.png",
-            "assets/img/projects/fitness_strong/fitness3.png",
-            "assets/img/projects/fitness_strong/fitness4.png",
-            "assets/img/projects/fitness_strong/fitness5.png"
+            {
+                link: "assets/img/projects/fitness_strong/fitness1.png",
+                desc: "Small test"
+            },
+            {
+                link: "assets/img/projects/fitness_strong/fitness2.png",
+                desc: "Small test"
+            },
+            {
+                link: "assets/img/projects/fitness_strong/fitness3.png",
+                desc: "Small test"
+            },
+            {
+                link: "assets/img/projects/fitness_strong/fitness4.png",
+                desc: "Small test"
+            },
+            {
+                link: "assets/img/projects/fitness_strong/fitness5.png",
+                desc: "Small test"
+            }
         ]
     },
+
+    //PHRESH FOOD           PHRESH FOOD         PHRESH FOOD         PHRESH FOOD
     "phresh-food": {
-        name: "Phresh Food"
+        name: "Phresh Food",
+        main_cover_picture: "assets/img/projects/phresh_food/phresh_food2.PNG",
+        mobile: {
+            is_mobile: true,
+            main_cover_mobile_picture: "assets/img/projects/phresh_food/phresh_food2.PNG",
+        },
+        developers: [
+            {
+                developer: "Victor Le",
+                url_links: {
+                    github: "www.github.com",
+                    linkedin: "www.linkedin.com",
+                    personal: "www.simplevictor.com"
+                },
+                contribution: "Everything"
+            }
+        ],
+        show_android_icon: true,
+        show_ios_icon: true,
+        android_link: "?",
+        ios_link: "https://itunes.apple.com/us/app/phreshfood/id1166449253",
+        description: "Innovative food ordering application that utilizes QR Code technology to enable “collaborative ordering” between multiple users.",
+        app_img: "www.google.com/img",
+        video: "www.youtube.com",
+        extra_picture: [
+            {
+                link: "assets/img/projects/phresh_food/phresh_food1.PNG",
+                desc: "Small test"
+            },
+            {
+                link: "assets/img/projects/phresh_food/phresh_food2.PNG",
+                desc: "Small test"
+            },
+            {
+                link: "assets/img/projects/phresh_food/phresh_food3.PNG",
+                desc: "Small test"
+            },
+            {
+                link: "assets/img/projects/phresh_food/phresh_food4.PNG",
+                desc: "Small test"
+            },
+            {
+                link: "assets/img/projects/phresh_food/phresh_food5.PNG",
+                desc: "Small test"
+            },
+            {
+                link: "assets/img/projects/phresh_food/phresh_food6.PNG",
+                desc: "Small test"
+            }
+        ]
     },
+
+    //SAFE DRIVE            SAFE DRIVE          SAFE DRIVE          SAFE DRIVE
     "safedrive": {
-        name: "SafeDrive"
+        name: "Safe Drive",
+        main_cover_picture: "assets/img/projects/safedrive/robot.png",
+        mobile: {
+            is_mobile: false,
+            main_cover_mobile_picture: "assets/img/projects/safedrive/robot.png",
+        },
+        developers: [
+            {
+                developer: "Victor Le",
+                url_links: {
+                    github: "www.github.com",
+                    linkedin: "www.linkedin.com",
+                    personal: "www.simplevictor.com"
+                },
+                contribution: "Everything"
+            }
+        ],
+        show_android_icon: false,
+        show_ios_icon: false,
+        android_link: "?",
+        ios_link: "?",
+        description: "Almost everyone has a slight temptation to use your phone while driving even though we know it's the wrong thing to do, we wanted to give that access without ever touching your phone. Safe drive is an AI that will connect to your via Bluetooth on your phone and gives you access to your phone without ever touching using voice commands.",
+        app_img: "www.google.com/img",
+        video: "www.youtube.com",
+        extra_picture: [
+            {
+                link: "assets/img/projects/safedrive/pic1.jpg",
+                desc: "Small test"
+            }
+        ]
     },
-    "day-planner-assitant": {
-        name: "Day Planner Assistant"
+
+    //DAY PLANNER ASSIST        DAY PLANNER ASSIST      DAY PLANNER ASSIST      DAY PLANNER ASSIST
+    "day-planner-assistant": {
+        name: "Day Planner Assistant",
+        main_cover_picture: "assets/img/projects/day_planner/planner2.PNG",
+        mobile: {
+            is_mobile: true,
+            main_cover_mobile_picture: "assets/img/projects/day_planner/planner2.PNG",
+        },
+        developers: [
+            {
+                developer: "Victor Le",
+                url_links: {
+                    github: "www.github.com",
+                    linkedin: "www.linkedin.com",
+                    personal: "www.simplevictor.com"
+                },
+                contribution: "Everything"
+            }
+        ],
+        show_android_icon: false,
+        show_ios_icon: true,
+        android_link: "?",
+        ios_link: "https://itunes.apple.com/us/app/day-planner-assistant-custom/id1178295762",
+        description: "Stop wasting time through out your day. Learn to be more productive with this application. The application will sort out your schedule for you so you won't have to! Let Planner Assist give you a more stable schedule throughout your day.",
+        app_img: "www.google.com/img",
+        video: "www.youtube.com",
+        extra_picture: [
+            {
+                link: "assets/img/projects/day_planner/planner1.PNG",
+                desc: "Small test"
+            },
+            {
+                link: "assets/img/projects/day_planner/planner2.PNG",
+                desc: "Small test"
+            },
+            {
+                link: "assets/img/projects/day_planner/planner3.PNG",
+                desc: "Small test"
+            },
+            {
+                link: "assets/img/projects/day_planner/planner4.PNG",
+                desc: "Small test"
+            }
+        ]
     },
+    //FOODAI        FOODAI      FOODAI      FOODAI
     "foodai": {
-        name: "Foodai"
+        name: "Foodai",
+        main_cover_picture: "assets/img/projects/foodai/foodia1.PNG",
+        mobile: {
+            is_mobile: true,
+            main_cover_mobile_picture: "assets/img/projects/foodai/foodia1.PNG",
+        },
+        developers: [
+            {
+                developer: "Victor Le",
+                url_links: {
+                    github: "www.github.com",
+                    linkedin: "www.linkedin.com",
+                    personal: "www.simplevictor.com"
+                },
+                contribution: "Everything"
+            }
+        ],
+        show_android_icon: false,
+        show_ios_icon: false,
+        android_link: "?",
+        ios_link: "?",
+        description: "Mobile application built using machine learning along with image recognition in scanning any household fridges to produce a combination of possible easy to follow recipes.",
+        app_img: "www.google.com/img",
+        video: "https://www.youtube.com/watch?v=mpgQVZ12BkA",
+        extra_picture: [
+            {
+                link: "assets/img/projects/foodai/foodia1.PNG",
+                desc: "Small test"
+            },
+            {
+                link: "assets/img/projects/foodai/foodia2.PNG",
+                desc: "Small test"
+            },
+            {
+                link: "assets/img/projects/foodai/foodia3.PNG",
+                desc: "Small test"
+            },
+            {
+                link: "assets/img/projects/foodai/foodia4.PNG",
+                desc: "Small test"
+            }
+        ]
     },
+
+    //ALEXAUX           ALEXAUX         ALEXAUX         ALEXAUX
     "alexaux": {
-        name: "AlexaUX"
+        name: "AlexaUX",
+        main_cover_picture: "assets/img/projects/alexaux/alexaux.jpg",
+        mobile: {
+            is_mobile: true,
+            main_cover_mobile_picture: "assets/img/projects/alexaux/alexaux.jpg",
+        },
+        developers: [
+            {
+                developer: "Victor Le",
+                url_links: {
+                    github: "www.github.com",
+                    linkedin: "www.linkedin.com",
+                    personal: "www.simplevictor.com"
+                },
+                contribution: "Everything"
+            }
+        ],
+        show_android_icon: false,
+        show_ios_icon: false,
+        android_link: "?",
+        ios_link: "?",
+        description: "Web creation tool with over 1000 customizable components using voice recognition from Amazon Echo. Lead and taught a team of 4 members in using lambda functions in conjunction with Amazon echo to build dynamic web components.",
+        app_img: "www.google.com/img",
+        video: "https://www.youtube.com/watch?v=4N4KhzO0qe0",
+        extra_picture: [
+            {
+                link: "assets/img/projects/alexaux/alexaux.jpg",
+                desc: "Small test"
+            },
+        ]
     },
+
+    //FRSECURITY            FRSECURITY          FRSECURITY          FRSECURITY
     "frsecurity": {
-        name: "FrSecurity"
+        name: "FrSecurity",
+        main_cover_picture: "assets/img/projects/frsecurity/frsecurity1.jpg",
+        mobile: {
+            is_mobile: false,
+            main_cover_mobile_picture: "assets/img/projects/frsecurity/frsecurity1.jpg",
+        },
+        developers: [
+            {
+                developer: "Victor Le",
+                url_links: {
+                    github: "www.github.com",
+                    linkedin: "www.linkedin.com",
+                    personal: "www.simplevictor.com"
+                },
+                contribution: "Everything"
+            }
+        ],
+        show_android_icon: false,
+        show_ios_icon: false,
+        android_link: "?",
+        ios_link: "?",
+        description: "Burglar-proof security application that detects unauthorized entries by implementing face recognition using a surveillance system, Clarafai, and Amazon Alexa.",
+        app_img: "www.google.com/img",
+        video: "?",
+        extra_picture: [
+            {
+                link: "assets/img/projects/frsecurity/frsecurity2.gif",
+                desc: "Small test"
+            },
+            {
+                link: "assets/img/projects/frsecurity/frsecurity1.jpg",
+                desc: "Small test"
+            }
+        ]
     },
+
+    //BAYMAX        BAYMAX          BAYMAX          BAYMAX
     "baymax": {
-        name: "Baymax 2.0"
+        name: "Baymax 2.0",
+        main_cover_picture: "assets/img/projects/baymax/baymax1.jpg",
+        mobile: {
+            is_mobile: false,
+            main_cover_mobile_picture: "assets/img/projects/baymax/baymax1.jpg",
+        },
+        developers: [
+            {
+                developer: "Victor Le",
+                url_links: {
+                    github: "www.github.com",
+                    linkedin: "www.linkedin.com",
+                    personal: "www.simplevictor.com"
+                },
+                contribution: "Everything"
+            }
+        ],
+        show_android_icon: false,
+        show_ios_icon: false,
+        android_link: "?",
+        ios_link: "?",
+        description: "Using Alexa, this will provide a simple and user friendly A.I. for all types of medical question and providing lightning fast response on symptoms, locations on the body, alternative prices for medication, and locations of pharmacies and clinics for you usage.",
+        app_img: "www.google.com/img",
+        video: "?",
+        extra_picture: [
+            {
+                link: "assets/img/projects/baymax/baymax.jpg",
+                desc: "Small test"
+            },
+            {
+                link: "assets/img/projects/baymax/baymax1.jpg",
+                desc: "Small test"
+            }
+        ]
     },
+
+    //WRINKLE           WRINKLE         WRINKLE         WRINKLE
     "wrinkle": {
-        name: "Wrinkle"
+        name: "Wrinkle",
+        main_cover_picture: "assets/img/projects/wrinkle/wrinkle1.jpg",
+        mobile: {
+            is_mobile: true,
+            main_cover_mobile_picture: "assets/img/projects/wrinkle/wrinkle1.jpg",
+        },
+        developers: [
+            {
+                developer: "Victor Le",
+                url_links: {
+                    github: "www.github.com",
+                    linkedin: "www.linkedin.com",
+                    personal: "www.simplevictor.com"
+                },
+                contribution: "Everything"
+            }
+        ],
+        show_android_icon: false,
+        show_ios_icon: false,
+        android_link: "?",
+        ios_link: "?",
+        description: "This project allows for modular and incremental system expansion to incorporate new technologies and facilitate participation in health monitoring systems with HIPAA compliance to ensure the patient's privacy while giving the freedom to live at home with minimally intrusive activity monitoring.",
+        app_img: "www.google.com/img",
+        video: "https://www.youtube.com/watch?v=q5P1uvQDWdw",
+        extra_picture: [
+            {
+                link: "assets/img/projects/wrinkle/wrinkle1.jpg",
+                desc: "Small test"
+            },
+            {
+                link: "assets/img/projects/wrinkle/wrinkle2.jpg",
+                desc: "Small test"
+            },
+            {
+                link: "assets/img/projects/wrinkle/wrinkle3.jpg",
+                desc: "Small test"
+            },
+            {
+                link: "assets/img/projects/wrinkle/wrinkle4.jpg",
+                desc: "Small test"
+            },
+            {
+                link: "assets/img/projects/wrinkle/wrinkle5.jpg",
+                desc: "Small test"
+            },
+            {
+                link: "assets/img/projects/wrinkle/wrinkle6.jpg",
+                desc: "Small test"
+            },
+        ]
     }
 };
