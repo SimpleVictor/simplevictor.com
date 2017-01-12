@@ -1,9 +1,9 @@
 <div class="project-single-container">
 
 
-    <img class="single-main-img" [src]='Project.main_cover_picture'>
+    <img class="single-main-img" [src]='Project.main_cover_picture' *ngIf="!this.mobileChecker">
 
-    <div class="store-icon">
+    <div class="store-icon" *ngIf="!this.mobileChecker">
         <div class="row">
             <img style="padding-right: 14rem;" class="store-icon-individual" src="assets/img/extra/apple-store.png">
             <img class="store-icon-individual" src="assets/img/extra/google-play.png">
@@ -22,24 +22,36 @@
 
         <div class="ui pointing secondary menu">
             <a class="active item" data-tab="description" (click)="AnimateTabs(tab1)"><i class="ui info circle icon"></i>Info</a>
-            <a class="item" data-tab="video" (click)="AnimateTabs(tab2)"><i class="ui video play outline icon"></i>Video</a>
-            <a class="item" data-tab="developers" (click)="AnimateTabs(tab3)"><i class="ui users icon"></i>Developers</a>
+            <a class="item" data-tab="photo" (click)="AnimateTabs(tab2)"><i class="ui video play outline icon"></i>Photos</a>
+            <a class="item" data-tab="video" (click)="AnimateTabs(tab3)"><i class="ui video play outline icon"></i>Video</a>
+            <a class="item" data-tab="developers" (click)="AnimateTabs(tab4)"><i class="ui users icon"></i>Developers</a>
         </div>
         <div class="ui tab segment active" data-tab="description">
             <div #tab1 class="ui segment">
-                <h1>Firsts</h1>
+                <h1>{{Project.name}}</h1>
+
+                <p>{{Project.description}}</p>
+            </div>
+        </div>
+
+        <div class="ui tab segment" data-tab="photo">
+            <div #tab2 class="ui segment">
+                <h1>Photos</h1>
+                <div class="ui small images">
+                    <img *ngFor="let i of Project.extra_picture" [src]="i">
+                </div>
             </div>
         </div>
 
         <div class="ui tab segment" data-tab="video">
-            <div #tab2 class="ui segment">
-                <h1>second</h1>
+            <div #tab3 class="ui segment">
+                <h1>Videos</h1>
             </div>
         </div>
 
         <div class="ui tab segment" data-tab="developers">
-            <div #tab3 class="ui segment">
-                <h1>third</h1>
+            <div #tab4 class="ui segment">
+                <h1>Developers</h1>
             </div>
         </div>
 
