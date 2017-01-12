@@ -1,5 +1,6 @@
 import {Component, AfterViewInit} from "@angular/core";
 import {ActivatedRoute} from "@angular/router";
+import {AllProjects} from "../../projects";
 
 declare let TweenMax,// ___
     Circ,//    |
@@ -21,17 +22,17 @@ export class ProjectSingle implements AfterViewInit{
 
     ParamProject;
     Project;
-
-
     //Used to make sure the tab finish animating before clicking another one
     TabReady: boolean = true;
 
 
     constructor(public activatedRoute: ActivatedRoute) {
+
         this.mobileChecker = mobilecheck(); //<--Init the function
         this.ParamProject = this.activatedRoute.params.subscribe((params) => {
             this.ParamProject = params["id"];
-            console.log(this.ParamProject);
+            this.Project = AllProjects[this.ParamProject];
+            console.log(this.Project);
         })
     }
 

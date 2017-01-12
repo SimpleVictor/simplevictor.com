@@ -100,9 +100,9 @@ export class ProjectsComponent implements AfterViewInit{
             current.overlay.css("display", "none");
     }
 
-    GoToSingleAppPage(card){
+    GoToSingleAppPage(params){
         // TweenMax.to($(card), 1, {rotation: 720, ease: Circ.easeOut});
-        window.location.href = "/#/single/234";
+        window.location.href = `/#/single/`+params;
     }
 
 

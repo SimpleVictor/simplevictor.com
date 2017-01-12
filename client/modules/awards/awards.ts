@@ -105,5 +105,10 @@ export class AwardsComponent implements AfterViewInit{
         current.overlay.css("display", "none");
     }
 
+    GoToSingleAppPage(params){
+        // TweenMax.to($(card), 1, {rotation: 720, ease: Circ.easeOut});
+        window.location.href = `/#/single/`+params;
+    }
+
 
 }
