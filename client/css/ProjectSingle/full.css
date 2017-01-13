@@ -40,13 +40,42 @@
         right: 12%;
     }
 
+    .second-main-img{
+        position: absolute;
+        top: 30%;
+        right: 20%;
+    }
+
+    .alexa-main-img{
+        position: absolute;
+        top: 26%;
+        right: 9%;
+    }
+
+    .teamup-main-img{
+        transform: scale(.60);
+        position: absolute;
+        top: 21%;
+        right: 5%;
+    }
+
+    .baymax-main-logo{
+        transform: scale(.55);
+        position: absolute;
+        top: 0;
+        right: 1%;
+    }
+
     /*Store Icon Container*/
     .store-icon{
-        transform: scale(0.15);
+        transform: scale(.15);
         position: absolute;
-        bottom: -14%;
-        width: 100%;
-        left: -1%;
+        /* bottom: -14%; */
+        /* width: 100%; */
+        /* height: 100%; */
+        /* left: -1%; */
+        bottom: -13%;
+        left: -30%;
     }
 
     .store-icon > .row{
@@ -120,14 +149,48 @@
         right: 8%;
     }
 
+    .second-main-img{
+        position: absolute;
+        top: 30%;
+        right: 5%;
+    }
+
+    .alexa-main-img{
+        position: absolute;
+        top: 26%;
+        right: -10%;
+    }
+
+    .teamup-main-img{
+        transform: scale(.60);
+        position: absolute;
+        top: 21%;
+        right: -10%;
+    }
+
+    .baymax-main-logo{
+        transform: scale(.55);
+        position: absolute;
+        top: 0;
+        right: -18%;
+    }
+
 
 
     /*Store Icon Container*/
     .store-icon{
-        transform: scale(0.15);
+        /*transform: scale(0.15);*/
+        /*position: absolute;*/
+        /*bottom: -14%;*/
+        /*width: 100%;*/
+        transform: scale(.15);
         position: absolute;
-        bottom: -14%;
-        width: 100%;
+        /* bottom: -14%; */
+        /* width: 100%; */
+        /* height: 100%; */
+        /* left: -1%; */
+        bottom: -13%;
+        left: -46%;
     }
 
     .store-icon > .row{
@@ -201,15 +264,53 @@
         right: -4%;
     }
 
+    /*Safe Drive*/
+    .second-main-img{
+        position: absolute;
+        top: 30%;
+        right: 6%;
+    }
+
+    /*ALEXA*/
+    .alexa-main-img{
+        position: absolute;
+        top: 26%;
+        right: -13%;
+    }
+
+    /*TEAMUP*/
+    .teamup-main-img{
+        transform: scale(.60);
+        position: absolute;
+        top: 21%;
+        right: -11%;
+    }
+
+    /*BAYMAX*/
+    .baymax-main-logo{
+        transform: scale(.55);
+        position: absolute;
+        top: 0;
+        right: -18%;
+    }
+
 
 
     /*Store Icon Container*/
     .store-icon{
-        transform: scale(0.15);
+        /*transform: scale(0.15);*/
+        /*position: absolute;*/
+        /*bottom: -14%;*/
+        /*width: 100%;*/
+        /*left: -12%;*/
+        transform: scale(.15);
         position: absolute;
-        bottom: -14%;
-        width: 100%;
-        left: -12%;
+        /* bottom: -14%; */
+        /* width: 100%; */
+        /* height: 100%; */
+        /* left: -1%; */
+        bottom: -13%;
+        left: -96%;
     }
 
     .store-icon > .row{

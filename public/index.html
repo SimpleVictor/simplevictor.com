@@ -24,6 +24,9 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/plugins/CSSPlugin.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/easing/EasePack.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script>
+        <script>
+            TweenMax.ticker.useRAF(false);
+        </script>
         <!-- 2. Configure SystemJS -->
 
         <!--<script src="systemjs.config.js"></script>-->
@@ -44,7 +47,7 @@
         </app>
     </div>
 
-        <!--  Production mod  -->
+          Production mod
         <script src="assets/js/bundle.min.js"></script>
     </body>
 </html>

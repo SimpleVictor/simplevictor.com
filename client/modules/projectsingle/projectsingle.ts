@@ -20,6 +20,9 @@ export class ProjectSingle implements AfterViewInit{
     mobileChecker; //<-- obviously
     mainContainer; //<--main container for the this component
 
+    WhatPicture;
+
+
     ParamProject;
     Project;
     //Used to make sure the tab finish animating before clicking another one
@@ -32,6 +35,17 @@ export class ProjectSingle implements AfterViewInit{
         this.ParamProject = this.activatedRoute.params.subscribe((params) => {
             this.ParamProject = params["id"];
             this.Project = AllProjects[this.ParamProject];
+            if(this.Project.name === "Safe Drive"){
+                this.WhatPicture = "second-main-img";
+            }else if(this.Project.name === "AlexaUX"){
+                this.WhatPicture = "alexa-main-img";
+            }else if(this.Project.name === "TeamUp"){
+                this.WhatPicture = "teamup-main-img";
+            }else if(this.Project.name === "Baymax 2.0") {
+                this.WhatPicture = "baymax-main-logo";
+            }else{
+                this.WhatPicture = "single-main-img";
+            }
             console.log(this.Project);
         })
     }

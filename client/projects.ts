@@ -392,5 +392,39 @@ export const AllProjects = {
                 desc: "Small test"
             },
         ]
+    },
+
+    //TEAM UP               //TEAM UP           TEAM UP         TEAM UP
+    "teamup": {
+        name: "TeamUp",
+        main_cover_picture: "assets/img/projects/teamup/teamup.jpg",
+        mobile: {
+            is_mobile: true,
+            main_cover_mobile_picture: "assets/img/projects/teamup/teamup.jpg",
+        },
+        developers: [
+            {
+                developer: "Victor Le",
+                url_links: {
+                    github: "www.github.com",
+                    linkedin: "www.linkedin.com",
+                    personal: "www.simplevictor.com"
+                },
+                contribution: "Everything"
+            }
+        ],
+        show_android_icon: false,
+        show_ios_icon: false,
+        android_link: "?",
+        ios_link: "?",
+        description: "Built this application to help people find teammates at the start of a hackathon. at the start of a hackathon, when everyone's milling around, trying to find a group, this app will make it easy to see people with similar or much needed skillets for a project.",
+        app_img: "www.google.com/img",
+        video: "https://www.youtube.com/watch?v=q5P1uvQDWdw",
+        extra_picture: [
+            {
+                link: "assets/img/projects/teamup/teamup.jpg",
+                desc: "Small test"
+            }
+        ]
     }
 };

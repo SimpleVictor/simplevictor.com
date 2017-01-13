@@ -1,7 +1,7 @@
 <div class="project-single-container">
 
 
-    <img class="single-main-img" [src]='Project.main_cover_picture' *ngIf="!this.mobileChecker">
+    <img [class]="WhatPicture" [src]='Project.main_cover_picture' *ngIf="!this.mobileChecker">
 
     <div class="store-icon" *ngIf="!this.mobileChecker">
         <div class="row">
@@ -71,10 +71,17 @@
             <a class="item" data-tab="third">Video</a>
             <a class="item" data-tab="fourth">Developers</a>
         </div>
-        <div class="ui active tab segment browser-desc-segment" data-tab="first">
-            <h1>{{Project.name}}</h1>
 
-            <p>{{Project.description}}</p>
+        <div class="ui active tab segment browser-desc-segment" data-tab="first">
+            <div class="ui centered grid">
+                <!--<div class="eight wide column">-->
+                    <h1>{{Project.name}}</h1>
+                    <p>{{Project.description}}</p>
+                <!--</div>-->
+                <!--<div class="eight wide column">-->
+                    <!--<img class="single-main-img" [src]='Project.main_cover_picture' *ngIf="!this.mobileChecker">-->
+                <!--</div>-->
+            </div>
         </div>
 
         <div class="ui tab segment browser-desc-segment" data-tab="second">
