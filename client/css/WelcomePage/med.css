@@ -18,10 +18,10 @@
     }
     .starting-circle{
         text-align: center;
-        /*width: 100%;*/
+        width: 100%;
         /*top: 23%;*/
-        /*height: 100%;*/
-        position: relative;
+        height: 100%;
+        position: absolute;
     }
 
     .starting-circle > .profile-img{

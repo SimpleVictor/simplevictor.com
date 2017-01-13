@@ -26,10 +26,10 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script>
         <!-- 2. Configure SystemJS -->
 
-        <!--<script src="systemjs.config.js"></script>-->
-        <!--<script>-->
-            <!--System.import('app').catch(function(err) { console.error(err); });-->
-        <!--</script>-->
+        <script src="systemjs.config.js"></script>
+        <script>
+            System.import('app').catch(function(err) { console.error(err); });
+        </script>
     </head>
 
     <body style="overflow-x: visible">
@@ -37,10 +37,6 @@
 
     <div class="pusher" style="z-index: 0 !important;overflow: visible">
         <app>
-            <!--<div class="se-pre-con"></div>-->
-            <!--<div class="ui active inverted dimmer">-->
-                <!--<div class="ui small loader"></div>-->
-            <!--</div>-->
             <div class="ui active dimmer">
                 <div class="ui text loader">Loading</div>
             </div>
@@ -49,6 +45,6 @@
     </div>
 
         <!--  Production mod  -->
-        <script src="assets/js/bundle.min.js"></script>
+        <!--<script src="assets/js/bundle.min.js"></script>-->
     </body>
 </html>

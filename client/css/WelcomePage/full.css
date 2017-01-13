@@ -26,7 +26,7 @@
         text-align: center;
         width: 100%;
         height: 100%;
-        position: relative;
+        position: absolute;
     }
 
     .starting-circle > .profile-img{
@@ -133,7 +133,7 @@
     .starting-circle{
         width: 100%;
         height: 100%;
-        position: relative;
+        position: absolute;
     }
 
     .starting-circle > .profile-img{
