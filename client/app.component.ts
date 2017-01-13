@@ -80,7 +80,6 @@ export class AppComponent implements AfterViewInit {
             this.sidebar = $('#MobileSidebar');
             //SIDEBAR SETTINGS
             this.sidebar.sidebar('setting', 'transition', 'overlay');
-            this.sidebar.sidebar('setting', "dimPage", false);
             //MENU BUTTON
             this.menuButton = $("#menu-button")[0];
             TweenMax.fromTo(this.menuButton, 1 ,
