@@ -46,8 +46,7 @@
         <div class="ui tab segment" data-tab="video">
             <div #tab3 class="ui segment">
                 <h1>Videos</h1>
-                <iframe width="420" height="345" src="https://www.youtube.com/embed/XGSy3_Czz8k" frameborder="0" allowfullscreen>
-                </iframe>
+                <iframe id="iframe-video-mobile" width="420" height="345" frameborder="0" allowfullscreen style="box-shadow: 0 2px 4px 0 rgba(34,36,38,.12), 0 2px 10px 0 rgba(34,36,38,.15)"></iframe>
             </div>
         </div>
 
@@ -93,7 +92,7 @@
 
         <div class="ui tab segment browser-desc-segment" data-tab="third" #webTab3>
             <!--<div class="ui raised link green segment" id="video-container" *ngIf="Project.video">-->
-                <iframe id="iframe-video" width="854" height="480" frameborder="0" allowfullscreen style="box-shadow: 0 2px 4px 0 rgba(34,36,38,.12), 0 2px 10px 0 rgba(34,36,38,.15)"></iframe>
+                <iframe id="iframe-video-web" width="854" height="480" frameborder="0" allowfullscreen style="box-shadow: 0 2px 4px 0 rgba(34,36,38,.12), 0 2px 10px 0 rgba(34,36,38,.15)"></iframe>
             <!--</div>-->
             <h1 id="no-video-tag" *ngIf="!Project.video">No video for this project...</h1>
         </div>

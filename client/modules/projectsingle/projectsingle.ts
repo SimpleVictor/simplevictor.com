@@ -60,9 +60,7 @@ export class ProjectSingle implements AfterViewInit{
         this.Img = $("#main-img-single");
         this.Icon = $(".store-icon");
 
-        if(this.Project.video){
-            $("#iframe-video").attr("src", this.Project.video);
-        };
+
 
         $('.menu .item')
             .tab()
@@ -72,6 +70,7 @@ export class ProjectSingle implements AfterViewInit{
 
         console.log(this.mobileChecker);
         if(this.mobileChecker){
+
             console.log("Project Component: MOBILE");
             //HIDE THE BROWSER CONTENT
             //THE GRID IS SET UP DIFFERENTLY ON THE BROWSER - 4X2
@@ -84,13 +83,21 @@ export class ProjectSingle implements AfterViewInit{
             let ImgZIndex = $(".profile-img");
             ImgZIndex.css("z-index", "5");
 
+            if(this.Project.video){
+                $("#iframe-video-mobile").attr("src", this.Project.video);
+            };
+
         }else{
+            if(this.Project.video){
+                $("#iframe-video-web").attr("src", this.Project.video);
+            };
             //HIDE THE MOBILE CONTENT
             //THE GRID IS SET UP DIFFERENTLY ON THE MOBILE - 2X4
             //Browser WILL BE 4X2
             let MobileContent = $(".project-single-mobile-container");
             MobileContent.css("display", "none");
             console.log("Project Component: WEB");
+
         }
     }
 
