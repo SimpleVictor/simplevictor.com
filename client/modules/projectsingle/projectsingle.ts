@@ -60,7 +60,9 @@ export class ProjectSingle implements AfterViewInit{
         this.Img = $("#main-img-single");
         this.Icon = $(".store-icon");
 
-        $("#iframe-video").attr("src", this.Project.video);
+        if(this.Project.video){
+            $("#iframe-video").attr("src", this.Project.video);
+        };
 
         $('.menu .item')
             .tab()
