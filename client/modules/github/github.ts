@@ -9,10 +9,7 @@ declare let TweenMax,// ___
 
 @Component({
     selector: "github",
-    styleUrls: [`client/css/GithubPage/full.css`,
-        `client/css/GithubPage/iphone.css`,
-        `client/css/GithubPage/medium.css`
-    ],
+    styleUrls: [`client/css/Minified/Github.min.css`],
     templateUrl: `client/modules/github/github.html`
 })
 

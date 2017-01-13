@@ -9,10 +9,7 @@ declare let TweenMax,// ___
 
 @Component({
     selector: "projects",
-    styleUrls: [`client/css/ProjectPage/full.css`,
-                `client/css/ProjectPage/iphone.css`,
-                `client/css/ProjectPage/medium.css`,
-                `client/css/ProjectPage/global.css`],
+    styleUrls: [`client/css/Minified/ProjectPage.min.css`],
     templateUrl: `client/modules/projects/projects.component.html`
 })
 export class ProjectsComponent implements AfterViewInit{

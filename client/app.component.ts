@@ -10,10 +10,7 @@ declare let TweenMax,// ___
 
 @Component({
     selector: "app",
-    styleUrls: [`client/css/WelcomePage/full.css`,
-                `client/css/WelcomePage/iphone.css`,
-                `client/css/WelcomePage/med.css`,
-                `client/css/WelcomePage/main.css`],
+    styleUrls: [`client/css/Minified/Welcome.min.css`],
     templateUrl: `./client/app.component.html`
 })
 export class AppComponent implements AfterViewInit {

@@ -11,7 +11,7 @@ declare let TweenMax,// ___
 
 @Component({
     selector: "single",
-    styleUrls: [`client/css/ProjectSingle/full.css`],
+    styleUrls: [`client/css/Minified/ProjectSingle.min.css`],
     templateUrl: `client/modules/projectsingle/projectsingle.html`
 })
 

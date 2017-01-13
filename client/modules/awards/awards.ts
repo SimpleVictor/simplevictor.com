@@ -11,10 +11,7 @@ declare let TweenMax,// ___
 
 @Component({
     selector: "awards",
-    styleUrls: [`client/css/AwardsPage/full.css`,
-        `client/css/AwardsPage/iphone.css`,
-        `client/css/AwardsPage/medium.css`
-    ],
+    styleUrls: [`client/css/Minified/Awards.min.css`],
     templateUrl: `client/modules/awards/awards.html`
 })
 

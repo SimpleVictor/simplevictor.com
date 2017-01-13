@@ -11,7 +11,8 @@
     "twc:server:w": "tsc -w -p ./server",
     "typings": "typings install",
     "bundle:prod": "node tools/builder.js --prod",
-    "postinstall": "typings install && tsc -p ./server"
+    "postinstall": "typings install && tsc -p ./server",
+    "cleanup": "cat ./client/css/AwardsPage/full.css ./client/css/AwardsPage/iphone.css ./client/css/AwardsPage/medium.css | cleancss -o ./client/css/Minified/Awards.min.css && cat ./client/css/GithubPage/full.css ./client/css/GithubPage/iphone.css ./client/css/GithubPage/medium.css | cleancss -o ./client/css/Minified/Github.min.css && cat ./client/css/ProjectPage/full.css ./client/css/ProjectPage/iphone.css ./client/css/ProjectPage/medium.css ./client/css/ProjectPage/global.css | cleancss -o ./client/css/Minified/ProjectPage.min.css && cat ./client/css/ProjectSingle/full.css | cleancss -o ./client/css/Minified/ProjectSingle.min.css && cat ./client/css/WelcomePage/full.css ./client/css/WelcomePage/iphone.css ./client/css/WelcomePage/main.css ./client/css/WelcomePage/med.css | cleancss -o ./client/css/Minified/Welcome.min.css && cat ./client/css/ResumePage/full.css ./client/css/ResumePage/iphone.css ./client/css/ResumePage/global.css ./client/css/ResumePage/medium.css | cleancss -o ./client/css/Minified/Resume.min.css"
   },
   "engines": {
     "node": ">= 5.4.1"

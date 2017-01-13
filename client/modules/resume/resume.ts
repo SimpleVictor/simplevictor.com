@@ -9,10 +9,7 @@ declare let TweenMax,// ___
 
 @Component({
     selector: "resume",
-    styleUrls: [`client/css/ResumePage/full.css`,
-        `client/css/ResumePage/iphone.css`,
-        `client/css/ResumePage/medium.css`,
-        `client/css/ResumePage/global.css`],
+    styleUrls: [`client/css/Minified/Resume.min.css`],
     templateUrl: `client/modules/resume/resume.html`
 })
 
