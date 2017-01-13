@@ -1,7 +1,7 @@
 <div class="project-single-container">
 
 
-    <img [class]="WhatPicture" [src]='Project.main_cover_picture' *ngIf="!this.mobileChecker">
+    <img [class]="WhatPicture" id="main-img-single" [src]='Project.main_cover_picture' *ngIf="!this.mobileChecker">
 
     <div class="store-icon" *ngIf="!this.mobileChecker">
         <div class="row">
@@ -66,37 +66,39 @@
 
 
         <div class="ui pointing secondary menu" id="web_menu">
-            <a class="active item" data-tab="first">About</a>
-            <a class="item" data-tab="second" (click)="PictureClicked()">Pictures</a>
-            <a class="item" data-tab="third">Video</a>
-            <a class="item" data-tab="fourth">Developers</a>
+            <a class="active item" data-tab="first" (click)="AnimateTabs(webTab1, 'about')">About</a>
+            <a class="item" data-tab="second" (click)="PictureClicked(webTab2, 'pictures')">Pictures</a>
+            <a class="item" data-tab="third" (click)="AnimateTabs(webTab3, 'video')">Video</a>
+            <a class="item" data-tab="fourth" (click)="AnimateTabs(webTab4, 'developer')">Developers</a>
         </div>
 
-        <div class="ui active tab segment browser-desc-segment" data-tab="first">
+        <div class="ui active tab segment browser-desc-segment" data-tab="first" #webTab1>
             <div class="ui centered grid">
                 <!--<div class="eight wide column">-->
                     <h1>{{Project.name}}</h1>
                     <p>{{Project.description}}</p>
-                <!--</div>-->
-                <!--<div class="eight wide column">-->
-                    <!--<img class="single-main-img" [src]='Project.main_cover_picture' *ngIf="!this.mobileChecker">-->
-                <!--</div>-->
             </div>
         </div>
 
-        <div class="ui tab segment browser-desc-segment" data-tab="second">
+        <div class="ui tab segment browser-desc-segment" data-tab="second" #webTab2>
             <h1>Pictures</h1>
             <div class="ui tiny images">
                 <a class="fancybox" *ngFor="let i of Project.extra_picture" caption="i.desc" rel="group" [href]="i.link"><img [src]="i.link"></a>
             </div>
-            <h3>Click to enlarge =]</h3>
+            <h4 class="ui horizontal divider header" style="color: #ccc">
+                <i class="mouse pointer icon"></i>
+                Click to enlarge
+            </h4>
         </div>
 
-        <div class="ui tab segment browser-desc-segment" data-tab="third">
-            <h1>Video</h1>
+        <div class="ui tab segment browser-desc-segment" data-tab="third" #webTab3>
+            <!--<div class="ui raised link green segment" id="video-container" *ngIf="Project.video">-->
+                <iframe id="iframe-video" width="854" height="480" frameborder="0" allowfullscreen style="box-shadow: 0 2px 4px 0 rgba(34,36,38,.12), 0 2px 10px 0 rgba(34,36,38,.15)"></iframe>
+            <!--</div>-->
+            <h1 id="no-video-tag" *ngIf="!Project.video">No video for this project...</h1>
         </div>
 
-        <div class="ui tab segment browser-desc-segment" data-tab="fourth">
+        <div class="ui tab segment browser-desc-segment" data-tab="fourth" #webTab4>
             <h1>Developers</h1>
         </div>
     </div>

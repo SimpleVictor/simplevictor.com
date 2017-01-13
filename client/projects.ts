@@ -26,7 +26,7 @@ export const AllProjects = {
         ios_link: "https://itunes.apple.com/us/app/fitness-strong/id1176821387",
         description: "Simplistic fitness application that generates daily workouts filtered by body parts and contains how-to videos for over 5000 exercises. Built using jQuery UI Plugins to enhance user experiences.",
         app_img: "www.google.com/img",
-        video: "www.youtube.com",
+        video: false,
         extra_picture: [
             {
                 link: "assets/img/projects/fitness_strong/fitness1.png",
@@ -76,7 +76,7 @@ export const AllProjects = {
         ios_link: "https://itunes.apple.com/us/app/phreshfood/id1166449253",
         description: "Innovative food ordering application that utilizes QR Code technology to enable “collaborative ordering” between multiple users.",
         app_img: "www.google.com/img",
-        video: "www.youtube.com",
+        video: false,
         extra_picture: [
             {
                 link: "assets/img/projects/phresh_food/phresh_food1.PNG",
@@ -130,7 +130,7 @@ export const AllProjects = {
         ios_link: "?",
         description: "Almost everyone has a slight temptation to use your phone while driving even though we know it's the wrong thing to do, we wanted to give that access without ever touching your phone. Safe drive is an AI that will connect to your via Bluetooth on your phone and gives you access to your phone without ever touching using voice commands.",
         app_img: "www.google.com/img",
-        video: "www.youtube.com",
+        video: false,
         extra_picture: [
             {
                 link: "assets/img/projects/safedrive/pic1.jpg",
@@ -164,7 +164,7 @@ export const AllProjects = {
         ios_link: "https://itunes.apple.com/us/app/day-planner-assistant-custom/id1178295762",
         description: "Stop wasting time through out your day. Learn to be more productive with this application. The application will sort out your schedule for you so you won't have to! Let Planner Assist give you a more stable schedule throughout your day.",
         app_img: "www.google.com/img",
-        video: "www.youtube.com",
+        video: false,
         extra_picture: [
             {
                 link: "assets/img/projects/day_planner/planner1.PNG",
@@ -209,7 +209,7 @@ export const AllProjects = {
         ios_link: "?",
         description: "Mobile application built using machine learning along with image recognition in scanning any household fridges to produce a combination of possible easy to follow recipes.",
         app_img: "www.google.com/img",
-        video: "https://www.youtube.com/watch?v=mpgQVZ12BkA",
+        video: "https://www.youtube.com/embed/mpgQVZ12BkA",
         extra_picture: [
             {
                 link: "assets/img/projects/foodai/foodia1.PNG",
@@ -255,7 +255,7 @@ export const AllProjects = {
         ios_link: "?",
         description: "Web creation tool with over 1000 customizable components using voice recognition from Amazon Echo. Lead and taught a team of 4 members in using lambda functions in conjunction with Amazon echo to build dynamic web components.",
         app_img: "www.google.com/img",
-        video: "https://www.youtube.com/watch?v=4N4KhzO0qe0",
+        video: "https://www.youtube.com/embed/4N4KhzO0qe0",
         extra_picture: [
             {
                 link: "assets/img/projects/alexaux/alexaux.jpg",
@@ -289,7 +289,7 @@ export const AllProjects = {
         ios_link: "?",
         description: "Burglar-proof security application that detects unauthorized entries by implementing face recognition using a surveillance system, Clarafai, and Amazon Alexa.",
         app_img: "www.google.com/img",
-        video: "?",
+        video: false,
         extra_picture: [
             {
                 link: "assets/img/projects/frsecurity/frsecurity2.gif",
@@ -327,7 +327,7 @@ export const AllProjects = {
         ios_link: "?",
         description: "Using Alexa, this will provide a simple and user friendly A.I. for all types of medical question and providing lightning fast response on symptoms, locations on the body, alternative prices for medication, and locations of pharmacies and clinics for you usage.",
         app_img: "www.google.com/img",
-        video: "?",
+        video: false,
         extra_picture: [
             {
                 link: "assets/img/projects/baymax/baymax.jpg",
@@ -365,7 +365,7 @@ export const AllProjects = {
         ios_link: "?",
         description: "This project allows for modular and incremental system expansion to incorporate new technologies and facilitate participation in health monitoring systems with HIPAA compliance to ensure the patient's privacy while giving the freedom to live at home with minimally intrusive activity monitoring.",
         app_img: "www.google.com/img",
-        video: "https://www.youtube.com/watch?v=q5P1uvQDWdw",
+        video: "https://www.youtube.com/embed/q5P1uvQDWdw",
         extra_picture: [
             {
                 link: "assets/img/projects/wrinkle/wrinkle1.jpg",
@@ -419,7 +419,7 @@ export const AllProjects = {
         ios_link: "?",
         description: "Built this application to help people find teammates at the start of a hackathon. at the start of a hackathon, when everyone's milling around, trying to find a group, this app will make it easy to see people with similar or much needed skillets for a project.",
         app_img: "www.google.com/img",
-        video: "https://www.youtube.com/watch?v=q5P1uvQDWdw",
+        video: false,
         extra_picture: [
             {
                 link: "assets/img/projects/teamup/teamup.jpg",

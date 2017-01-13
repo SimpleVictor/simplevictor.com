@@ -20,8 +20,13 @@ export class ProjectSingle implements AfterViewInit{
     mobileChecker; //<-- obviously
     mainContainer; //<--main container for the this component
 
+    CurrentState = "about";
+
     WhatPicture;
 
+
+    Img;
+    Icon;
 
     ParamProject;
     Project;
@@ -51,6 +56,11 @@ export class ProjectSingle implements AfterViewInit{
     }
 
     ngAfterViewInit(){
+
+        this.Img = $("#main-img-single");
+        this.Icon = $(".store-icon");
+
+        $("#iframe-video").attr("src", this.Project.video);
 
         $('.menu .item')
             .tab()
@@ -91,19 +101,31 @@ export class ProjectSingle implements AfterViewInit{
         window.location.href = "/#/projects";
     }
 
-    AnimateTabs(tab){
+    AnimateTabs(tab, current){
         let vm = this;
+        vm.CurrentState = current;
+
         let ReadyNow = () => {
             this.TabReady = true;
         }
         //Condition statement is to avoid having the user click multiple times
         if(this.TabReady){
             this.TabReady = false;
+            console.log(this.CurrentState);
+            if(this.CurrentState === "video"){
+                this.Img.css("display", "none");
+                this.Icon.css("display", "none");
+
+            }else{
+                this.Img.css("display", "block");
+                this.Icon.css("display", "block");
+            }
             TweenMax.from($(tab), 0.5, {scale: 0, ease: Circ.easeOut, onComplete: ReadyNow});
         }
     }
 
-    PictureClicked(){
+    PictureClicked(tab, current){
+        this.AnimateTabs(tab, current);
         setTimeout(() => {
             $(".fancybox").fancybox({
                 padding : 0,
