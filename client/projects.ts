@@ -426,5 +426,39 @@ export const AllProjects = {
                 desc: "Small test"
             }
         ]
+    },
+
+    //Perfect Gift  Perfect Gift        Perfect Gift        Perfect Gift    Perfect Gift
+    "perfectgift": {
+        name: "Perfect Gift",
+        main_cover_picture: "assets/img/projects/perfectgift/perfectgift.gif",
+        mobile: {
+            is_mobile: true,
+            main_cover_mobile_picture: "assets/img/projects/perfectgift/perfectgift.gif",
+        },
+        developers: [
+            {
+                developer: "Victor Le",
+                url_links: {
+                    github: "www.github.com",
+                    linkedin: "www.linkedin.com",
+                    personal: "www.simplevictor.com"
+                },
+                contribution: "Everything"
+            }
+        ],
+        show_android_icon: false,
+        show_ios_icon: false,
+        android_link: "?",
+        ios_link: "?",
+        description: "This app grabs data off of a Facebook user's profile and generates a list of possible gift ideas based on the user's basic information (such as school, major, and career) and Facebook likes.",
+        app_img: "www.google.com/img",
+        video: "https://www.youtube.com/embed/wcJQ774oO68",
+        extra_picture: [
+            {
+                link: "assets/img/projects/perfectgift/perfectgift.gif",
+                desc: "Small test"
+            }
+        ]
     }
 };
