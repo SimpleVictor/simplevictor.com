@@ -5,6 +5,7 @@
 
     /*MAIN CONTAINEr*/
     .project-single-container{
+        background-color: blue;
         width: 100%;
         height: 100%;
         top: 1%;
@@ -189,8 +190,9 @@
 
     .alexa-main-img{
         position: absolute;
-        top: 26%;
-        right: -10%;
+        top: 31%;
+        transform: scale(0.7);
+        right: -7%;
     }
 
     .teamup-main-img{
@@ -206,6 +208,17 @@
         top: 0;
         right: -18%;
     }
+
+    .perfectgift-logo{
+        position: absolute;
+        right: 6%;
+        top: 40%;
+        transform: scale(1.2);
+        border: 4px solid #ccc;
+
+    }
+
+
 
 
 
@@ -315,8 +328,9 @@
     /*ALEXA*/
     .alexa-main-img{
         position: absolute;
-        top: 26%;
-        right: -13%;
+        top: 33%;
+        transform: scale(.5);
+        right: -15%;
     }
 
     /*TEAMUP*/
@@ -333,6 +347,14 @@
         position: absolute;
         top: 0;
         right: -18%;
+    }
+
+    .perfectgift-logo{
+        position: absolute;
+        right: 1%;
+        top: 45%;
+        transform: scale(1);
+        border: 4px solid #ccc;
     }
 
 

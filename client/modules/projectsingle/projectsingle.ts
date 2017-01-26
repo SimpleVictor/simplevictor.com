@@ -36,6 +36,11 @@ export class ProjectSingle implements AfterViewInit{
 
     constructor(public activatedRoute: ActivatedRoute) {
 
+        // top: 40%;
+        // transform: scale(1.5);
+        // border: 4px solid #ccc;
+
+
         this.mobileChecker = mobilecheck(); //<--Init the function
         this.ParamProject = this.activatedRoute.params.subscribe((params) => {
             this.ParamProject = params["id"];
@@ -48,7 +53,9 @@ export class ProjectSingle implements AfterViewInit{
                 this.WhatPicture = "teamup-main-img";
             }else if(this.Project.name === "Baymax 2.0") {
                 this.WhatPicture = "baymax-main-logo";
-            }else{
+            }else if(this.Project.name === "Perfect Gift"){
+                this.WhatPicture = "perfectgift-logo";
+            } else{
                 this.WhatPicture = "single-main-img";
             }
             console.log(this.Project);

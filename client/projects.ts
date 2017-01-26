@@ -233,10 +233,10 @@ export const AllProjects = {
     //ALEXAUX           ALEXAUX         ALEXAUX         ALEXAUX
     "alexaux": {
         name: "AlexaUX",
-        main_cover_picture: "assets/img/projects/alexaux/alexaux.jpg",
+        main_cover_picture: "assets/img/projects/alexaux/alexaux_min.gif",
         mobile: {
             is_mobile: true,
-            main_cover_mobile_picture: "assets/img/projects/alexaux/alexaux.jpg",
+            main_cover_mobile_picture: "assets/img/projects/alexaux/alexaux_min.gif",
         },
         developers: [
             {
@@ -258,9 +258,13 @@ export const AllProjects = {
         video: "https://www.youtube.com/embed/4N4KhzO0qe0",
         extra_picture: [
             {
-                link: "assets/img/projects/alexaux/alexaux.jpg",
+                link: "assets/img/projects/alexaux/alexaux_min.gif",
                 desc: "Small test"
             },
+            {
+                link: "assets/img/projects/alexaux/alexaux.jpg",
+                desc: "Small test"
+            }
         ]
     },
 
