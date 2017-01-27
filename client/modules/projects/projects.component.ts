@@ -1,4 +1,5 @@
 import {Component, AfterViewInit} from "@angular/core";
+import {AllProjects} from "../../projects";
 
 declare let TweenMax,// ___
                 Circ,//    |
@@ -23,6 +24,7 @@ export class ProjectsComponent implements AfterViewInit{
     CurrentBox;
 
     constructor() {
+        console.log(AllProjects);
         this.mobileChecker = mobilecheck(); //<--Init the function
     }
 

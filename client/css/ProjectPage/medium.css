@@ -21,7 +21,9 @@
         height: 100%;
     }
 
-
+    .extra.content{
+        padding: .45em .5em !important;
+    }
 
     .ui.special.cards {
         width: 14rem;

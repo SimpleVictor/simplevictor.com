@@ -28,6 +28,10 @@
         position: relative;
         top: 9%;
     }
+
+    .extra.content{
+        padding: .45em .5em !important;
+    }
 }
 
 @media (min-width: 1600px) {

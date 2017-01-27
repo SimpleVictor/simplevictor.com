@@ -70,7 +70,7 @@ export const AllProjects = {
                 contribution: "Everything"
             }
         ],
-        show_android_icon: true,
+        show_android_icon: false,
         show_ios_icon: true,
         android_link: "?",
         ios_link: "https://itunes.apple.com/us/app/phreshfood/id1166449253",
