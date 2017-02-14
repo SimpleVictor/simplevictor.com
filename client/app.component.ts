@@ -38,6 +38,7 @@ export class AppComponent implements AfterViewInit {
 
 
     constructor(public animCheck: AnimationChecker) {
+        console.log("Welcome to my site =]");
         //This function is to make sure if the user refreshes the page and they're not on the main route.
         //Then redirect the user back to the main Route.
         //This is to avoid animation collisions
