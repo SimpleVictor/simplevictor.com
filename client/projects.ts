@@ -142,7 +142,7 @@ export const AllProjects = {
     //DAY PLANNER ASSIST        DAY PLANNER ASSIST      DAY PLANNER ASSIST      DAY PLANNER ASSIST
     "day-planner-assistant": {
         name: "Day Planner Assistant",
-        main_cover_picture: "assets/img/projects/day_planner/planner2.PNG",
+        main_cover_picture: "assets/img/projects/wowvid/wowvid.gif",
         mobile: {
             is_mobile: true,
             main_cover_mobile_picture: "assets/img/projects/day_planner/planner2.PNG",
@@ -180,6 +180,108 @@ export const AllProjects = {
             },
             {
                 link: "assets/img/projects/day_planner/planner4.PNG",
+                desc: "Small test"
+            }
+        ]
+    },
+    //WOWVID        WOWVID      WOWVID      WOWVID      WOWVID      WOWVID
+    "wowvid": {
+        name: "WowVid",
+        main_cover_picture: "assets/img/projects/wowvid/wowvid.gif",
+        mobile: {
+            is_mobile: true,
+            main_cover_mobile_picture: "assets/img/projects/wowvid/wowvid.gif",
+        },
+        developers: [
+            {
+                developer: "Victor Le",
+                url_links: {
+                    github: "www.github.com",
+                    linkedin: "www.linkedin.com",
+                    personal: "www.simplevictor.com"
+                },
+                contribution: "Everything"
+            }
+        ],
+        show_android_icon: false,
+        show_ios_icon: true,
+        android_link: "?",
+        ios_link: "https://itunes.apple.com/us/app/day-planner-assistant-custom/id1178295762",
+        description: "It is and Online video generator helping the user to put pictures, text, and music together generating a short video. We are mostly aiming toward new developer since we made it extremely user friendly so they can demo their projects , and also the target audience can be diverse since we incorporate several API such a language translator and more....",
+        app_img: "www.google.com/img",
+        video: "https://www.youtube.com/embed/pYZ76Kv0Ne0",
+        extra_picture: [
+            {
+                link: "assets/img/projects/wowvid/wowvid1.png",
+                desc: "Small test"
+            },
+            {
+                link: "assets/img/projects/wowvid/wowvid2.png",
+                desc: "Small test"
+            },
+            {
+                link: "assets/img/projects/wowvid/wowvid3.png",
+                desc: "Small test"
+            },
+            {
+                link: "assets/img/projects/wowvid/wowvid4.png",
+                desc: "Small test"
+            },
+            {
+                link: "assets/img/projects/wowvid/wowvid5.png",
+                desc: "Small test"
+            },
+            {
+                link: "assets/img/projects/wowvid/wowvid6.png",
+                desc: "Small test"
+            }
+        ]
+    },
+    //Doublechecker     Doublechecker       Doublechecker       Doublechecker
+    "doublecheck": {
+        name: "Double Check",
+        main_cover_picture: "assets/img/projects/doublecheck/doublecheck.gif",
+        mobile: {
+            is_mobile: true,
+            main_cover_mobile_picture: "assets/img/projects/doublecheck/doublecheck.gif",
+        },
+        developers: [
+            {
+                developer: "Victor Le",
+                url_links: {
+                    github: "www.github.com",
+                    linkedin: "www.linkedin.com",
+                    personal: "www.simplevictor.com"
+                },
+                contribution: "Everything"
+            }
+        ],
+        show_android_icon: false,
+        show_ios_icon: true,
+        android_link: "?",
+        ios_link: "https://itunes.apple.com/us/app/day-planner-assistant-custom/id1178295762",
+        description: "Scan any prescription bottle and return the text from the picture. With the help of Microsoft Vision API , we were able to translate the bottle to a different language if need be.",
+        app_img: "www.google.com/img",
+        video: "https://www.youtube.com/embed/q02To_F46_s",
+        extra_picture: [
+            {
+                link: "assets/img/projects/doublecheck/doublecheck1.png",
+                desc: "Small test"
+            },
+            {
+                link: "assets/img/projects/doublecheck/doublecheck2.png",
+                desc: "Small test"
+            },
+            {
+                link: "assets/img/projects/doublecheck/doublecheck3.png",
+                desc: "Small test"
+            },
+            {
+                link: "assets/img/projects/doublecheck/doublecheck4.png",
+                desc: "Small test"
+            },
+            {
+                link: "assets/img/projects/doublecheck/doublecheck5.png",
                 desc: "Small test"
             }
         ]
