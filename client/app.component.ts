@@ -54,7 +54,7 @@ export class AppComponent implements AfterViewInit {
     }
 
     ngAfterViewInit(){
-        console.log("works at this");
+        console.log("works at thissss");
         //STARTING POINT - ANIMATE CONTAINERS IN
         this.profileImg = $(".profile-img")[0];
         this.basicInfoContainer = $(".basic-info")[0];
