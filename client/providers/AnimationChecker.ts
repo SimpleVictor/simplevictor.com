@@ -1,6 +1,4 @@
 import { Injectable } from '@angular/core';
-import {Http, Response, Headers, RequestOptions} from "@angular/http";
-import 'rxjs/operator/map';
 
 declare let TweenMax,// ___
     Circ,//    |
@@ -18,7 +16,8 @@ export class AnimationChecker{
     profileImg;
     basicInfoContainer;
 
-    constructor(private http: Http) {
+    // constructor(private http: Http) {
+    constructor() {
         this.mobileChecker = mobilecheck(); //<--Init the function
     }
 

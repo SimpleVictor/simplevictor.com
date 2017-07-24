@@ -3,7 +3,7 @@ import {ResumeComponent} from "./resume";
 
 
 export const routes: Routes = [
-    { path: 'resume', component: ResumeComponent }
+    { path: '', component: ResumeComponent }
 ];
 
 export const routing = RouterModule.forChild(routes);

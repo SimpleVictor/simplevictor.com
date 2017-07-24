@@ -3,7 +3,7 @@ import {AwardsComponent} from "./awards";
 
 
 export const routes: Routes = [
-    { path: 'awards', component: AwardsComponent }
+    { path: '', component: AwardsComponent }
 ];
 
 export const routing = RouterModule.forChild(routes);

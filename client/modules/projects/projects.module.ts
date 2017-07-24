@@ -9,15 +9,10 @@ import {routing} from "./projects.routing";
 
 @NgModule({
     imports: [
-        CommonModule,
         routing,
-        SharedModule.forRoot(),
         NgSemanticModule,
     ],
     declarations: [
-        ProjectsComponent
-    ],
-    bootstrap: [
         ProjectsComponent
     ],
     schemas: [

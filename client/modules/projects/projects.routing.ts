@@ -3,7 +3,7 @@ import {ProjectsComponent} from "./projects.component";
 
 
 export const routes: Routes = [
-    { path: 'projects', component: ProjectsComponent},
+    { path: '', component: ProjectsComponent},
 ];
 
 export const routing = RouterModule.forChild(routes);
